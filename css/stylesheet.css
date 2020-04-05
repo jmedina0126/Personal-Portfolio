@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css?family=Inter|Roboto:400,400i|Sen&display=swap");
+
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+
+* {
+  box-sizing: border-box;
+}
+html, body {
+  background-color: #303030;
+  scroll-behaviour: smooth;
+  font-family: roboto, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  position: relative;
+  color: #FFF;
+}
+.main-container {
+ top: 0;
+ bottom: 0;
+ min-height: 100vh;
+ display: block;
+ position: relative;
+ padding-bottom: 100px;
+ overflow: hidden;
+}
+h2, h3 {
+  font-size: 3em
+}
+
+/* Header */
+
+#nav-header {
+  top: 0;
+  position: fixed;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  background-color: #0e1215;
+  border-bottom: solid;
+  border-color: #89b0cd;
+  z-index: 1;
+}
+#navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: .4em;
+  padding-bottom: .4em;
+}
+.nav-links ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  margin-left: 4em;
+}
+.nav-links li {
+  list-style: none;
+  cursor: pointer;
+  padding: 0.8em;
+}
+.nav-link {
+  text-decoration: none;
+  transition: 0.3s;
+  color: #FFF;
+}
+
+.nav-link:hover {
+  color: #00c9c8;
+}
+
+
+main {
+  margin: 0;
+  padding: 0;
+
+  scroll-snap-type: y proximity
+}
+section {
+  padding-top: 0.2em;
+  height: 100vh;
+}
+
+/* Welcome Section */
+
+#welcome-section {
+  background-color: #0e1215;
+  background-image: url("https://raw.githubusercontent.com/jmedina0126/Personal-Portfolio/master/Img/black-flat-screen-computer-monitor-1714208.jpg");
+  background-size: cover;
+  text-align: center;
+}
+.overlay {
+  top: 0;
+  position: absolute;
+  margin: auto;
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  opacity: 75%;
+}
+.wrapper {
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+h1 {
+  color: #FFF;
+  font-family: 'Dancing Script', cursive;
+  font-size: 8em;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+}
+#welcome-section p {
+  color: #FFF;
+  font-size: 2.6em;
+  padding: 0;
+  margin: 0;
+}
+
+/* Skill Section */
+
+#skills {
+  background-color: #f0f0f0;
+  color: #000;
+}
+.skills-icon {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  place-content: center;
+  grid-row-gap: 6rem;
+
+}
+.skills-icon span, i {
+  margin: auto;
+}
+.html-icon {
+  color: #e54c21;
+}
+.css-icon {
+  color: #0170ba;
+}
+.git-icon {
+  color: tomato;
+}
+
+/* Project Section */
+
+#projects {
+  background: #303030;
+  color: #FFF;
+  height: auto;
+}
+.tile-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  max-width: 1200px;
+  margin: auto;
+  gap: 20px;
+}
+.project-tile {
+  padding: 1em 2em 1em;
+  margin: 2em 2em 2em;
+}
+.project-tile a {
+  text-decoration: none;
+}
+.project-image {
+  height: 360px;
+  width: 270px;
+  z-index: 2;
+  transition: opacity .5s;
+}
+.project-image:hover {
+    transform: scale(1.1);
+    opacity: .5;
+}
+.tile-text {
+  text-align: center;
+  position: relative;
+  color: #FFF;
+  z-index: 3;
+  text-decoration: none;
+}
+
+/* Footer */
+
+footer {
+  background-color: #FFF;
+  color: #000;
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+}
+footer a {
+  display: inline-block;
+  
+  padding: 10px 10px;
+  color: #000;
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+footer a:hover { 
+  color: #00c6cf;
+  transform: translateY(-10px);
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  h2, h3 {
+    font-size: 2em;
+  }
+  h1 {
+    font-size: 6rem;
+  }
+  #welcome-section p {
+    font-size: 2rem;
+  }
+}
