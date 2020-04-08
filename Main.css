@@ -49,10 +49,9 @@ h2, h3 {
   padding-bottom: .4em;
 }
 .nav-links ul {
-  margin: 0;
+  margin: 0 0 0 4em;
   padding: 0;
   display: flex;
-  margin-left: 4em;
 }
 .nav-links li {
   list-style: none;
@@ -60,15 +59,16 @@ h2, h3 {
   padding: 0.8em;
 }
 .nav-link {
+  color: #FFF;
   text-decoration: none;
   transition: 0.3s;
-  color: #FFF;
 }
 
 .nav-link:hover {
   color: #00c9c8;
 }
 
+/* Main */
 
 main {
   margin: 0;
@@ -93,8 +93,7 @@ section {
   margin: auto;
   width: 100%;
   height: 100vh;
-  background-color: #000;
-  opacity: 75%;
+  background-color: rgba(0,0,0,.75)
 }
 .wrapper {
   margin: 0 auto;
@@ -105,13 +104,11 @@ section {
   transform: translateY(-50%);
 }
 h1 {
-  color: #FFF;
   font-family: 'Dancing Script', cursive;
   font-size: 8em;
   font-weight: bold;
 }
 #welcome-section p {
-  color: #FFF;
   font-size: 2.6em;
 }
 
@@ -149,7 +146,6 @@ h2 {
 
 #projects {
   background: #303030;
-  color: #FFF;
   height: auto;
 }
 .tile-container {
@@ -178,9 +174,9 @@ h2 {
     opacity: .5;
 }
 .tile-text {
+  color: #FFF;
   text-align: center;
   position: relative;
-  color: #FFF;
   z-index: 3;
   text-decoration: none;
 }
