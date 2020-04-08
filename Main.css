@@ -1,8 +1,7 @@
+@import url('normalize.css');
+
 @import url("https://fonts.googleapis.com/css?family=Inter|Roboto:400,400i|Sen&display=swap");
-
-
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
-
 
 * {
   box-sizing: border-box;
@@ -11,7 +10,6 @@ html, body {
   background-color: #303030;
   scroll-behavior: smooth;
   font-family: roboto, sans-serif;
-  margin: 0;
   padding: 0;
   height: 100%;
   position: relative;
@@ -111,14 +109,10 @@ h1 {
   font-family: 'Dancing Script', cursive;
   font-size: 8em;
   font-weight: bold;
-  padding: 0;
-  margin: 0;
 }
 #welcome-section p {
   color: #FFF;
   font-size: 2.6em;
-  padding: 0;
-  margin: 0;
 }
 
 /* Skill Section */
@@ -160,14 +154,15 @@ h2 {
 }
 .tile-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
   max-width: 1200px;
   margin: auto;
   gap: 20px;
+  justify-content: center;
 }
 .project-tile {
-  padding: 1em 2em 1em;
-  margin: 2em 2em 2em;
+  padding: 3em 0;
+  margin: auto;
 }
 .project-tile a {
   text-decoration: none;
@@ -188,6 +183,21 @@ h2 {
   color: #FFF;
   z-index: 3;
   text-decoration: none;
+}
+
+/* Grid item placement */
+
+#tribute, #survey {
+  grid-row: 1/2;
+}
+#tribute, #landing {
+  grid-column: 1/2;
+}
+#technical, #landing {
+  grid-row: 2/3;
+}
+#survey, #technical {
+  grid-column: 2/3;
 }
 
 /* Footer */
