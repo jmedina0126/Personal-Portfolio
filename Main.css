@@ -69,11 +69,6 @@ h2, h3 {
 }
 
 /* Main */
-
-main {
-  margin: 0;
-  padding: 0;
-}
 section {
   padding-top: 0.2em;
   height: 100vh;
@@ -93,7 +88,7 @@ section {
   margin: auto;
   width: 100%;
   height: 100vh;
-  background-color: rgba(0,0,0,.75)
+  background-color: rgba(0,0,0,.75);
 }
 .wrapper {
   margin: 0 auto;
@@ -117,9 +112,7 @@ h1 {
 #skills {
   background-color: #f0f0f0;
   color: #000;
-}
-h2 {
-  padding-top: 0.3em;
+  margin: auto;
 }
 .skills-icon {
   display: grid;
