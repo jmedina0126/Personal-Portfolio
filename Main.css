@@ -207,6 +207,21 @@ footer a:hover {
   cursor: pointer;
 }
 
+@media only screen and (min-width: 600px) {
+  #tribute, #survey {
+    grid-row: 1/2;
+  }
+  #tribute, #landing {
+    grid-column: 1/2;
+  }
+  #technical, #landing {
+    grid-row: 2/3;
+  }
+  #survey, #technical {
+    grid-column: 2/3;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   h2, h3 {
     font-size: 2em;
