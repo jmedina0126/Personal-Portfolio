@@ -159,6 +159,7 @@ h2 {
 .project-tile {
   padding: 3em 0;
   margin: auto;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
 }
 .project-tile a {
   text-decoration: none;
@@ -179,21 +180,6 @@ h2 {
   position: relative;
   z-index: 3;
   text-decoration: none;
-}
-
-/* Grid item placement */
-
-#tribute, #survey {
-  grid-row: 1/2;
-}
-#tribute, #landing {
-  grid-column: 1/2;
-}
-#technical, #landing {
-  grid-row: 2/3;
-}
-#survey, #technical {
-  grid-column: 2/3;
 }
 
 /* Footer */
