@@ -120,7 +120,7 @@ h1 {
   grid-template-rows: repeat(2, 1fr);
   place-content: center;
   grid-row-gap: 6rem;
-
+  justify-items: center;
 }
 .skills-icon span, i {
   margin: auto;
@@ -198,6 +198,13 @@ footer a:hover {
   color: #00c6cf;
   transform: translateY(-10px);
   cursor: pointer;
+}
+
+@media only screen and (max-width: 780px) {
+  #skills {
+    height: auto;
+    padding-bottom: 5em;
+  }
 }
 
 @media only screen and (min-width: 600px) {
