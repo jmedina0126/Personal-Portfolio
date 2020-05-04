@@ -156,7 +156,7 @@ h1 {
 }
 .tile-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(590px, 1fr));
   max-width: 1200px;
   margin: auto;
   gap: 20px;
@@ -167,7 +167,7 @@ h1 {
   width: 560px;
   padding: 3em 0;
   margin: auto;
-  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(590px, 1fr));
   position: relative;
   text-align: center;
   display: table-cell;
@@ -201,10 +201,7 @@ h1 {
   transition: .5s;
 
   text-align: center;
-  text-decoration: none;
-  font-size: 2em;
-  font-weight: bold;
-
+  text-decoration: none;file:///home/jmedina/Documents/Programming/Web-Development/My-Portfolio/Personal-Portfolio/index.html#welcome-section
   display: flex;
   justify-content: center;
   align-items: center;
@@ -247,7 +244,7 @@ footer p {
   }
 }
 
-@media only screen and (min-width: 780px) {
+@media only screen and (min-width: 900px) {
   #tribute, #survey {
     grid-row: 1/2;
   }
