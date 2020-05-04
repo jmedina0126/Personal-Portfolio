@@ -60,7 +60,6 @@ html, body {
   text-decoration: none;
   transition: 0.3s;
 }
-
 .nav-link:hover {
   color: #00c9c8;
 }
@@ -203,9 +202,6 @@ h1 {
   justify-content: center;
   align-items: center;
 }
-.tile-text:hover {
-  opacity: 1;
-}
 .tile-text::first-line {
   font-size: 2em;
 }
@@ -241,6 +237,14 @@ footer p {
   #skills {
     padding-bottom: 5em;
   }
+  .tile-text {
+    display: none;
+  }
+  .project-tile p {
+    text-decoration: none;
+    color: #097DAE;
+    font-size: 1.4em
+  }
 }
 
 @media only screen and (min-width: 900px) {
@@ -259,12 +263,15 @@ footer p {
   .project-image:hover {
     opacity: .5;
   }
+  .tile-text:hover {
+    opacity: 1;
+  }
+  .project-tile p {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 600px) {
-  .project-tile {
-    width: 95vw;
-  }
   h2, h3 {
     font-size: 2em;
   }
@@ -273,5 +280,8 @@ footer p {
   }
   #welcome-section p {
     font-size: 2rem;
+  }
+  .project-tile {
+    width: 95vw;
   }
 }
