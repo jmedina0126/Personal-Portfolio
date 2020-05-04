@@ -238,12 +238,6 @@ footer a:hover {
 }
 
 @media only screen and (min-width: 600px) {
-  #skills {
-    height: 100%;
-  }
-  .project-tile {
-    width: 80%;
-  }
   #tribute, #survey {
     grid-row: 1/2;
   }
@@ -259,6 +253,12 @@ footer a:hover {
 }
 
 @media only screen and (max-width: 600px) {
+  #skills {
+    height: 100%;
+  }
+  .project-tile {
+    width: 80vw;
+  }
   h2, h3 {
     font-size: 2em;
   }
