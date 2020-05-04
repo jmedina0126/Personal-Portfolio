@@ -169,6 +169,7 @@ h1 {
   padding: 3em 0;
   grid-template-columns: repeat(auto-fit, minmax(590px, 1fr));
   position: relative;
+  margin: auto;
 }
 .project-tile a {
   text-decoration: none;
