@@ -69,7 +69,7 @@ section {
   padding-top: 0.2em;
   height: 100vh;
 }
-h2, h3 {
+h2, h3, h4 {
   font-size: 2.6em;
   margin-top: 1.8em;
   text-align: center;
@@ -108,11 +108,17 @@ h1 {
   font-size: 2.6em;
 }
 
-/* About me Section */
-#about-me {
+/* About Me Section */
+
+#about {
   background: #fff;
-  color: ;
+  color: #000;
+  text-align: center;
 }
+#about p {
+  margin: 0 20em;
+}
+
 /* Skill Section */
 
 #skills {
@@ -234,6 +240,12 @@ footer p {
 }
 
 @media only screen and (max-width: 780px) {
+  .nav-link {
+    color: #00c9c8;
+  }
+  #welcome-section p {
+    margin: 0 .8em;
+  }
   #skills, #projects {
     padding-bottom: 5em;
   }
@@ -244,6 +256,9 @@ footer p {
     text-decoration: none;
     color: #097DAE;
     font-size: 1.4em
+  }
+  footer a {
+    color: #00c6cf;
   }
 }
 
