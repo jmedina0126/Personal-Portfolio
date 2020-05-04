@@ -117,6 +117,7 @@ h1 {
 #skills {
   background-color: #f0f0f0;
   color: #000;
+  height: auto;
   margin: auto;
 }
 .skills-icon {
@@ -138,6 +139,11 @@ h1 {
 }
 .git-icon {
   color: tomato;
+}
+.skills-icon span p {
+  color: black;
+  text-align: center;
+  font-size: 1.5em;
 }
 
 /* Project Section */
@@ -232,7 +238,6 @@ footer a:hover {
 
 @media only screen and (max-width: 780px) {
   #skills {
-    height: auto;
     padding-bottom: 5em;
   }
 }
@@ -253,9 +258,6 @@ footer a:hover {
 }
 
 @media only screen and (max-width: 600px) {
-  #skills {
-    height: 100%;
-  }
   .project-tile {
     width: 95vw;
   }
