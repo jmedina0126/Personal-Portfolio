@@ -234,7 +234,7 @@ footer p {
 }
 
 @media only screen and (max-width: 780px) {
-  #skills {
+  #skills, #projects {
     padding-bottom: 5em;
   }
   .tile-text {
