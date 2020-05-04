@@ -169,7 +169,6 @@ h1 {
   padding: 3em 0;
   grid-template-columns: repeat(auto-fit, minmax(590px, 1fr));
   position: relative;
-  text-align: center;
 }
 .project-tile a {
   text-decoration: none;
@@ -182,9 +181,6 @@ h1 {
   outline: 1px solid rgba(0, 0, 0, .2);
   z-index: 2;
   transition: opacity .5s;
-}
-.project-image:hover {
-  opacity: .5;
 }
 .tile-text {
   background-color: rgba(1, 1, 1, 0.7);
@@ -230,7 +226,6 @@ footer a {
   transition: 0.5s;
   text-decoration: none;
 }
-
 footer a:hover { 
   color: #00c6cf;
   transform: translateY(-10px);
@@ -259,6 +254,9 @@ footer p {
   }
   #survey, #technical {
     grid-column: 2/3;
+  }
+  .project-image:hover {
+    opacity: .5;
   }
 }
 
