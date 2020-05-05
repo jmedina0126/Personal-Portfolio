@@ -46,7 +46,6 @@ html, body {
   padding-bottom: .4em;
 }
 .nav-links ul {
-  margin: 0 0 0 4em;
   padding: 0;
   display: flex;
 }
@@ -267,6 +266,9 @@ footer p {
 }
 
 @media only screen and (min-width: 900px) {
+  .nav-links ul {
+    margin-left: 4em;
+  }
   #tribute, #survey {
     grid-row: 1/2;
   }
