@@ -69,10 +69,11 @@ section {
   padding-top: 0.2em;
   height: 100vh;
 }
-h2, h3, h4 {
+h2, h3 {
   font-size: 2.6em;
   margin-top: 1.8em;
   text-align: center;
+  color: #000;
 }
 
 /* Welcome Section */
@@ -111,12 +112,15 @@ h1 {
 /* About Me Section */
 
 #about {
-  background: #fff;
-  color: #000;
+  background: #f5f5f5;
+  color: #707070;
   text-align: center;
+  height: auto;
+  padding-bottom: 5em;
 }
 #about p {
-  margin: 0 20em;
+  margin: 0 25em;
+  line-height: 25px
 }
 
 /* Skill Section */
@@ -126,10 +130,11 @@ h1 {
   color: #000;
   height: auto;
   margin: auto;
+  padding-top: 5em;
 }
 .skills-icon {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 27em);
   grid-template-rows: repeat(2, 1fr);
   place-content: center;
   grid-row-gap: 6rem;
@@ -157,7 +162,6 @@ h1 {
 
 #projects {
   background-color: #FFF;
-  color: #000;
   height: auto;
 }
 .tile-container {
@@ -208,8 +212,8 @@ h1 {
   justify-content: center;
   align-items: center;
 }
-.tile-text::first-line {
-  font-size: 2em;
+#google {
+  grid-column: ;
 }
 
 /* Footer */
