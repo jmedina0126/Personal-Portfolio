@@ -118,7 +118,6 @@ h1 {
   padding-bottom: 5em;
 }
 #about p {
-  margin: 0 25em;
   line-height: 25px
 }
 
@@ -133,7 +132,7 @@ h1 {
 }
 .skills-icon {
   display: grid;
-  grid-template-columns: repeat(2, 27em);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   place-content: center;
   grid-row-gap: 6rem;
@@ -269,6 +268,12 @@ footer p {
   .nav-links ul {
     margin-left: 4em;
   }
+  #about p {
+    margin: 0 25em;
+  }
+  .skills-icon {
+    grid-template-columns: repeat(2, 27em);
+  }
   #tribute, #survey {
     grid-row: 1/2;
   }
@@ -301,6 +306,9 @@ footer p {
   }
   #welcome-section p {
     font-size: 2rem;
+  }
+  #about p {
+    margin: 0 1em;
   }
   .project-tile {
     width: 95vw;
