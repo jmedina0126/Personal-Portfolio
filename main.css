@@ -42,8 +42,6 @@ html, body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding-top: .4em;
-  padding-bottom: .4em;
 }
 .nav-links ul {
   padding: 0;
@@ -53,7 +51,7 @@ html, body {
 .nav-links li {
   list-style: none;
   cursor: pointer;
-  padding: 0.8em;
+  padding: 0.4em 0.8em;
 }
 .nav-link {
   color: #FFF;
@@ -69,7 +67,7 @@ section {
   padding-top: 0.2em;
   height: 100vh;
 }
-h2, h3 {
+h2, h6 {
   font-size: 2.6em;
   margin-top: 1.8em;
   text-align: center;
@@ -299,7 +297,7 @@ footer p {
 }
 
 @media only screen and (max-width: 600px) {
-  h2, h3 {
+  h2, h6 {
     font-size: 2em;
   }
   h1 {
