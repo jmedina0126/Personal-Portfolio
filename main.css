@@ -308,14 +308,13 @@ footer p {
     font-size: 2em;
   }
   #welcome-section p {
-    font-size: 4.5rem;
+    font-size: 3.3em;
   }
   .nav-links ul {
-    margin: auto;
-    padding: 0 .4em;
+    margin: .5em auto;
   }
   h1 {
-    font-size: 3.2rem;
+    font-size: 3em;
   }
   #about p {
     margin: 0 1em;
