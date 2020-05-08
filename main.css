@@ -10,10 +10,12 @@ html, body {
   background-color: #303030;
   scroll-behavior: smooth;
   font-family: roboto, sans-serif;
-  padding: 0;
   height: 100%;
   position: relative;
   color: #FFF;
+}
+body {
+  padding-top: 1em;
 }
 .main-container {
  top: 0;
@@ -98,13 +100,14 @@ h2, h6 {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-h1 {
-  font-family: 'Dancing Script', cursive;
-  font-size: 8em;
-  font-weight: bold;
-}
 #welcome-section p {
-  font-size: 2.6em;
+  font-family: 'Dancing Script', cursive;
+  font-size: 5.2em;
+  margin-bottom: 0;
+}
+h1 {
+  font-size: 4.4em;
+  font-weight: bold;
 }
 
 /* About Me Section */
@@ -116,8 +119,12 @@ h1 {
   height: auto;
   padding-bottom: 5em;
 }
+h6 {
+  margin-bottom: 1em;
+}
 #about p {
-  line-height: 25px
+  line-height: 30px;
+  margin-top: 0;
 }
 
 /* Skill Section */
@@ -268,7 +275,7 @@ footer p {
 
 @media only screen and (min-width: 900px) {
   #about p {
-    margin: 0 25em;
+    margin: 0 22em;
   }
   .skills-icon {
     grid-template-columns: repeat(2, 27em);
