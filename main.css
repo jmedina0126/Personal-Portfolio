@@ -280,16 +280,16 @@ footer p {
   .skills-icon {
     grid-template-columns: repeat(2, 27em);
   }
-  #tribute, #survey {
+  #rps, #google {
     grid-row: 1/2;
   }
-  #tribute, #landing {
-    grid-column: 1/2;
-  }
-  #technical, #landing {
+  #technical, #survey {
     grid-row: 2/3;
   }
-  #survey, #technical {
+  #rps, #technical, #tribute {
+    grid-column: 1/2;
+  }
+  #google, #survey {
     grid-column: 2/3;
   }
   .project-image:hover {
