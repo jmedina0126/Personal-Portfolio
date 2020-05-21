@@ -304,17 +304,23 @@ footer p {
   /* Skills */
   #skills {
     grid-template-columns: repeat(2, 200px);
-    grid-template-rows: repeat(11, 100px);
+    grid-template-rows: repeat(15, 100px);
 
     grid-template-areas:
     ". ."
     "about1 about1"
     "about1 about1"
+    ". ."
+    ". ."
     "html css"
     "html css"
     ". ."
+    ". ."
+    ". ."
     "about2 about2"
     "about2 about2"
+    ". ."
+    ". ."
     "tablet mobile"
     "tablet mobile"
     ". .";
