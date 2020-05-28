@@ -459,19 +459,20 @@ footer p {
     padding-bottom: 2em;
   }
 
-/* Projects */
+  /* Projects */
 
-#portfolio {
-  padding-bottom: 4em;
-}
-#portfolio > h2 {
-  margin-bottom: 1em;
-}
+  #portfolio {
+    padding-bottom: 4em;
+  }
+  #portfolio > h2 {
+    margin-bottom: 1em;
+  }
   .tile-text, h4 {
     display: none;
   }
   .project-tile {
     margin-bottom: 5em;
+    height: 320px;
   }
   .project-tile > p {
     color: #097DAE;
