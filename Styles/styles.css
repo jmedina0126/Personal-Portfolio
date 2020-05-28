@@ -257,12 +257,21 @@ h2 {
 }
 h4 {
   font-size: 2em;
-  margin: 1.6em 1.8em .2em;
+  margin: 1.8em 1.8em .2em;
 }
 .tile-text > p {
-  font-size: 1.6em;
+  font-size: 1.4em;
   color: #24e4ee;
-  margin: 0;
+  margin: 0 0 1em;
+}
+#dsk-lnk {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1em;
+  border: 1px solid rgb(255, 255, 255);
+  padding: .4em;
 }
 
 /* Project page */
@@ -475,7 +484,6 @@ footer p {
     text-decoration: none;
     color: #333;
     font-size: 1em;
-    background-color: #fff;
     border: 1px solid rgb(0, 0, 0);
     padding: .4em;
   }
