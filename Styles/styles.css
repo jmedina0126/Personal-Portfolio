@@ -73,7 +73,7 @@ h2, h6 {
   font-size: 2.6em;
   margin-top: 1.8em;
   text-align: center;
-  color: #000;
+  color: #333;
 }
 
 /* Welcome Section */
@@ -103,13 +103,13 @@ h2, h6 {
 #welcome-section p {
   font-family: 'Dancing Script', cursive;
   font-size: 5.2em;
-  margin-bottom: 0;
+  margin: 0;
 }
 
 /* Skill Section */
 
 #skills {
-  background-color: #ffffff;
+  background-color: #fff;
   height: auto;
 
   
@@ -146,6 +146,8 @@ h2, h6 {
   color: #e54c21;
   grid-area: html;
   align-self: center;
+  transition: 0.5s;
+  transform-origin: left;
 }
 .css-icon {
   color: #0170ba;
@@ -203,6 +205,7 @@ h2 {
 #portfolio {
   background-color: #FFF;
   height: auto;
+  padding-bottom: 4em;
 }
 .tile-container {
   display: grid;
@@ -313,7 +316,64 @@ footer p {
   color: #f5f5f5;
 }
 
-@media only screen and (max-width: 780px) {
+@media only screen and (min-width: 1120px) {
+
+  h1 {
+    font-size: 4.4em;
+    font-weight: bold;
+    margin: 0 4em 1em;
+  }
+
+  /* Skills */
+
+  h6 {
+    margin: 1em 0;
+  }
+  #about p {
+    margin: 0 22em;
+  }
+  .skills-icon {
+    grid-template-columns: repeat(2, 27em);
+  }
+
+  /* Projects */
+
+  #portfolio > h2 {
+    font-size: 2.5em;
+    padding-bottom: 1em;
+  }
+  #rps, #google {
+    grid-row: 1/2;
+  }
+  #technical, #survey {
+    grid-row: 2/3;
+  }
+  #rps, #technical {
+    grid-column: 1/2;
+  }
+  #google, #survey {
+    grid-column: 2/3;
+  }
+  #tribute {
+    grid-column: 1/3;
+    justify-self: center;
+    margin-bottom: 2em;
+  }
+  .project-image:hover {
+    opacity: .5;
+  }
+  .tile-text:hover {
+    opacity: 1;
+  }
+  .project-tile > p {
+    display: none;
+  }
+  #mob-lnk {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1120px) {
 
   /* Nav */
 
@@ -392,6 +452,9 @@ footer p {
 
 /* Projects */
 
+#portfolio {
+  padding-bottom: 4em;
+}
 #portfolio > h2 {
   margin-bottom: 1em;
 }
@@ -399,72 +462,31 @@ footer p {
     display: none;
   }
   .project-tile {
-    padding-bottom: 3em;
+    margin-bottom: 5em;
   }
   .project-tile > p {
-    text-decoration: none;
     color: #097DAE;
-    font-size: 1.4em
+    font-size: 1.2em;
+    text-align: center;
+  }
+  #mob-lnk {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: #333;
+    font-size: 1em;
+    background-color: #fff;
+    border: 1px solid rgb(0, 0, 0);
+    padding: .4em;
+  }
+  .project-image {
+    margin: 0 0 1.2em;
   }
 
   /* Footer */
 
   footer a {
     color: #00c6cf;
-  }
-}
-
-@media only screen and (min-width: 900px) {
-
-  h1 {
-    font-size: 4.4em;
-    font-weight: bold;
-    margin: 0 4em;
-  }
-
-  /* Skills */
-
-  h6 {
-    margin: 1em 0;
-  }
-  #about p {
-    margin: 0 22em;
-  }
-  .skills-icon {
-    grid-template-columns: repeat(2, 27em);
-  }
-
-  /* Projects */
-
-  #portfolio > h2 {
-    font-size: 2.5em;
-    padding-bottom: 1em;
-  }
-  #rps, #google {
-    grid-row: 1/2;
-  }
-  #technical, #survey {
-    grid-row: 2/3;
-  }
-  #rps, #technical {
-    grid-column: 1/2;
-  }
-  #google, #survey {
-    grid-column: 2/3;
-  }
-  #tribute {
-    grid-column: 1/3;
-    justify-self: center;
-    margin-bottom: 2em;
-  }
-  .project-image:hover {
-    opacity: .5;
-  }
-  .tile-text:hover {
-    opacity: 1;
-  }
-  .project-tile a > p {
-    display: none;
   }
 }
 
@@ -484,7 +506,6 @@ footer p {
   h1 {
     font-size: 2.5em;
   }
-
   .project-tile {
     width: 95vw;
   }
