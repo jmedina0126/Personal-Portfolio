@@ -473,6 +473,7 @@ footer p {
   .project-tile {
     margin-bottom: 5em;
     height: 320px;
+    text-align: center;
   }
   .project-tile > p {
     color: #097DAE;
