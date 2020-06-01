@@ -1,7 +1,6 @@
 @import url('normalize.css');
 
-@import url("https://fonts.googleapis.com/css?family=Inter|Roboto:400,400i|Sen&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto:ital@0;1&display=swap');
 
 * {
   box-sizing: border-box;
@@ -285,15 +284,26 @@ h4 {
   height: 25em;
 }
 .imgs-cont {
-  width: 100vw;
+  width: 60vw;
   height: 30em;
-  overflow: hidden;
+  background-color: #fff;
   display: flex;
   flex-direction: row;
-  background: #fff;
+  position: relative;
+  border: solid 10px #2c2c2c;
+  margin: 0 auto;
 }
-.used-skills {
-  margin: auto 4em;
+.pro-imgs {
+  width: 100%;
+  height: auto;
+  position: absolute;
+}
+.pro-img {
+  width: 100%;
+  height: auto;
+}
+.pro-skills {
+  width: 40vw;
   display: grid;
   grid-template-areas: 
   "html . css"
