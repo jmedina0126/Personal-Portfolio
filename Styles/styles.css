@@ -609,7 +609,7 @@ footer p {
     padding-bottom: 48%;
   }
   .nxt, .pre {
-    width: 10%;
+    width: 8%;
     height: 100%;
     top: 0;
     bottom: 40%;
@@ -664,8 +664,12 @@ footer p {
   .dot-cont {
     bottom: 22%;
   }
+  .dots {
+    width: 13px;
+    height: 13px;
+  }
   .imgs-cont {
-    padding-bottom: 45%;
+    padding-bottom: 50%;
   }
   .pro-desc {
     line-height: 2;
