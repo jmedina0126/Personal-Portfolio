@@ -601,11 +601,16 @@ footer p {
 
   /* Projects page */
 
+.main-container {
+  background: #fff;
+}
   #projects {
     width: 100vw;
+    height: auto;
   }
   .imgs-cont {
     width: 95vw;
+    height: 100%;
     padding-bottom: 48%;
   }
   .nxt, .pre {
@@ -619,6 +624,7 @@ footer p {
   }
   .pro-desc > p {
     margin: 2em 2em;
+    line-height: 1.6;
   }
 
   /* Footer */
@@ -661,6 +667,7 @@ footer p {
   .project-tile {
     width: 95vw;
   }
+
   .dot-cont {
     bottom: 22%;
   }
@@ -670,9 +677,10 @@ footer p {
   }
   .imgs-cont {
     padding-bottom: 50%;
+    width: 100vw;
   }
   .pro-desc {
-    line-height: 2;
-    margin: 6em auto 0;
+    line-height: 1.7;
+    margin: 3em auto 0;
   }
 }
