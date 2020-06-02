@@ -583,7 +583,7 @@ footer p {
     text-align: center;
   }
   .mob-lnks {
-    margin-left: 4em;
+    margin-left: 2em;
   }
   .mob-lnk {
     position: relative;
@@ -609,7 +609,7 @@ footer p {
     padding-bottom: 48%;
   }
   .nxt, .pre {
-    width: 5%;
+    width: 10%;
     height: 100%;
     top: 0;
     bottom: 40%;
