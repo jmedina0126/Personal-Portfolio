@@ -83,6 +83,7 @@ h2, h6 {
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
+  height: 100vh;
 }
 .overlay {
   top: 0;
@@ -277,7 +278,7 @@ h4 {
 
 /* Project page */
 
-#conttwo {
+#pagetwo {
   background: #e3e0f3;
   height: auto;
 }
@@ -629,6 +630,7 @@ footer p {
 }
 
 @media only screen and (max-width: 600px) {
+  
 
   /* Nav */
 
@@ -656,6 +658,10 @@ footer p {
 
   /* Portfolio */
 
+  #conttwo {
+    background: #e3e0f3;
+    height: auto;
+  }
   .project-tile {
     width: 95vw;
   }
