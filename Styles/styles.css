@@ -280,7 +280,6 @@ h4 {
 
 #pagetwo {
   background: #e3e0f3;
-  height: auto;
 }
 #projects {
   margin: auto;
@@ -390,6 +389,7 @@ h4 {
   height: auto;
   color: #333;
   text-align: justify;
+  line-height: 1.5;
 }
 
 /* Footer */
@@ -603,7 +603,6 @@ footer p {
 
   #projects {
     width: 100vw;
-    height: auto;
   }
   .imgs-cont {
     width: 95vw;
@@ -619,7 +618,7 @@ footer p {
     display: none;
   }
   .pro-desc > p {
-    margin: 2em;
+    margin: 2em 2em;
   }
 
   /* Footer */
@@ -658,10 +657,7 @@ footer p {
 
   /* Portfolio */
 
-  #conttwo {
-    background: #e3e0f3;
-    height: auto;
-  }
+
   .project-tile {
     width: 95vw;
   }
@@ -670,5 +666,9 @@ footer p {
   }
   .imgs-cont {
     padding-bottom: 45%;
+  }
+  .pro-desc {
+    line-height: 2;
+    margin: 6em auto 0;
   }
 }
