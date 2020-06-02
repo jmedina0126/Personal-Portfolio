@@ -14,7 +14,7 @@ html, body {
 }
 body {
   padding-top: 1em;
-  height: 100%
+  height: auto;
 }
 
 /* Header */
@@ -67,7 +67,6 @@ body {
  }
 section {
   padding-top: 0.2em;
-  height: 100vh;
 }
 h2, h6 {
   font-size: 2.6em;
@@ -278,7 +277,7 @@ h4 {
 
 /* Project page */
 
-#pagetwo {
+#conttwo {
   background: #e3e0f3;
   height: auto;
 }
@@ -286,6 +285,7 @@ h4 {
   margin: auto;
   background-color: #fff;
   width: 70em;
+  height: 100vh;
 }
 #pro-nav {
   height: 18em;
@@ -296,7 +296,6 @@ h4 {
   position: relative;
   margin: 4em auto 0;
   background-color: #fff;
-  border: solid 10px #2c2c2c;
   display: flex;
   flex-direction: row;
   overflow: hidden;
@@ -478,6 +477,7 @@ footer p {
 
   .imgs-cont {
     padding-bottom: 38%;
+    border: solid 10px #2c2c2c;
   }
   .pro-desc > p {
     margin: 3em 5em;
@@ -602,6 +602,7 @@ footer p {
 
   #projects {
     width: 100vw;
+    height: auto;
   }
   .imgs-cont {
     width: 95vw;
