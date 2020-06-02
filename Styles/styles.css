@@ -9,12 +9,12 @@ html, body {
   background-color: #303030;
   scroll-behavior: smooth;
   font-family: roboto, sans-serif;
-  height: 100%;
   position: relative;
   color: #FFF;
 }
 body {
   padding-top: 1em;
+  height: 100%
 }
 
 /* Header */
@@ -28,7 +28,7 @@ body {
   background-color: #0e1215;
   border-bottom: solid;
   border-color: #89b0cd;
-  z-index: 4;
+  z-index: 1000;
 }
 #navbar {
   display: flex;
@@ -277,31 +277,96 @@ h4 {
 
 /* Project page */
 
+#pagetwo {
+  background: #e3e0f3;
+}
 #projects {
+  margin: auto;
   background-color: #fff;
+  width: 70em;
 }
 #pro-nav {
-  height: 25em;
+  height: 18em;
 }
 .imgs-cont {
-  width: 60vw;
-  height: 30em;
+  width: 65vw;
+  height: 29em;
+  position: relative;
+  margin: 4em auto 0;
   background-color: #fff;
+  border: solid 10px #2c2c2c;
   display: flex;
   flex-direction: row;
-  position: relative;
-  border: solid 10px #2c2c2c;
-  margin: 0 auto;
+  overflow: hidden;
 }
 .pro-imgs {
   width: 100%;
   height: auto;
   position: absolute;
+  z-index: -1;
 }
-.pro-img {
+.pro-imgs > img {
   width: 100%;
   height: auto;
 }
+
+#i1, #i2 {
+  display: none;
+}
+#i1:checked ~ #one, #i2:checked ~ #two {
+  z-index: 9;
+}
+
+.nxt, .pre {
+  width: 65px;
+  height: 65px;
+  position: absolute;
+  background: rgba(0, 0, 0, .65);
+  z-index: 99;
+  cursor: pointer;
+  margin: auto;
+  text-align: center;
+}
+#one > .nxt, #one > .pre {
+  top: 40%;
+}
+#two > .pre, #two > .nxt {
+  top: 37%;
+}
+.nxt {
+  right: 0;
+}
+.pre {
+  left: 0;
+}
+.nxt > i:hover, .pre > i:hover {
+  color: #00c6cf;
+}
+
+.dot-cont {
+  width: 100%;
+  height: 11px;
+  bottom: 12%;
+  position: absolute;
+  text-align: center;
+  z-index: 99;
+}
+.dots {
+  top: 2em;
+  width: 18px;
+  height: 18px;
+  margin: 0 4px;
+  position: relative;
+  border-radius: 50%;
+  display: inline-block;
+  background: rgba(0, 0, 0, .8);
+  cursor: pointer;
+}
+#i1:checked ~ .dot-cont #dot1,
+#i2:checked ~ .dot-cont #dot2 {
+  background: #00c6cf;
+}
+
 .pro-skills {
   width: 40vw;
   display: grid;
@@ -317,23 +382,16 @@ h4 {
   grid-area: javascript;
   color: #F0DB4F;
 }
+
+
 .pro-desc {
   width: 100vw;
-  height: 20em;
+  height: auto;
   color: #333;
-  background: #fff;
+  text-align: justify;
 }
-.prv-img, .nxt-img {
-  color: #333;
-  z-index: 2;
-  position: absolute;
-  top: 50%;
-  background: rgba(0, 0, 0, .35);
-  width: 4em;
-  text-align: center;
-}
-.nxt-img {
-  right: 0;
+.pro-desc > p {
+  margin: 1em 22em 0 7em;
 }
 
 /* Footer */
