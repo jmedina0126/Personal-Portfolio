@@ -286,7 +286,7 @@ h4 {
   margin: 0 5px;
 }
 
-/* Project page */
+/* Project pages */
 
 #pagetwo {
   background: #e3e0f3;
@@ -489,7 +489,7 @@ footer p {
   .tile-text:hover {
     opacity: 1;
   }
-  .project-tile > p {
+  figcaption {
     display: none;
   }
   .mob-lnk {
@@ -601,10 +601,11 @@ footer p {
     margin: 5em auto;
     height: 320px;
   }
-  .project-tile > p {
+  figcaption {
     color: #097DAE;
     font-size: 1.2em;
     text-align: center;
+    padding-bottom: 1em;
   }
   .mob-lnks {
     margin-left: 2em;
@@ -695,8 +696,6 @@ footer p {
   h2, h6 {
     font-size: 2em;
   }
-
-  /* Main */
 
   #welcome-section p {
     font-size: 3.3em;
