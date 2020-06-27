@@ -79,9 +79,6 @@ h2, h6 {
 
 #welcome-section {
   background-color: #0e1215;
-  background-image: url("/Img/black-flat-screen-computer-monitor-1714208squooshed.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
   text-align: center;
   height: 100vh;
 }
@@ -129,8 +126,12 @@ h2, h6 {
   "about2 about2 . . mobile"
   "about2 about2 . tablet mobile"
   "about2 about2 . tablet ."
-  ". . . . .";
+  ". . . . ."
   /*
+  ". about3 about3 about3 ."
+  ". . . . ."
+  ". about4 about4 about4 .";
+  
   ". git . . ."
   ". git . . ."
   ". . . linux ."
@@ -200,6 +201,15 @@ h2, h6 {
   grid-area: about2;
   align-self: center;
 }
+/*
+
+#about-3 {
+  grid-area: about3;
+}
+#about-4 {
+  grid-area: about4;
+} 
+*/
 
 /* Portfolio Section */
 
@@ -529,6 +539,10 @@ footer p {
     ". ."
     "tablet mobile"
     "tablet mobile"
+    ". ."
+    "about3 about3"
+    ". ."
+    "about4 about4"
     ". .";
     /*
     "git github"
@@ -643,8 +657,29 @@ footer p {
   }
 }
 
+@media only screen and (min-width: 900px) {
+  #welcome-section {
+    background-image: url("/Img/black-flat-screen-computer-monitor-Large.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+  #welcome-section {
+    background-image: url("/Img/black-flat-screen-computer-monitor-Medium.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
 @media only screen and (max-width: 600px) {
-  
+
+  #welcome-section {
+    background-image: url("/Img/black-flat-screen-computer-monitor-Small.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 
   /* Nav */
 
