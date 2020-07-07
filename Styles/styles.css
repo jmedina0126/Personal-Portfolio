@@ -671,6 +671,7 @@ footer p {
     background-image: url("/Img/black-flat-screen-computer-monitor-Medium.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    min-height: 900px;
   }
 }
 
@@ -680,6 +681,7 @@ footer p {
     background-image: url("/Img/black-flat-screen-computer-monitor-Small.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    min-height: 600px;
   }
 
   /* Nav */
