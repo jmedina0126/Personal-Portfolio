@@ -475,10 +475,10 @@ footer p {
   #survey, #tribute {
     grid-row: 3/4;
   }
-  #rps, #google, #survey {
+  #stopwatch, #google, #survey {
     grid-column: 1/2;
   }
-  #stopwatch, #technical, #tribute {
+  #rps, #technical, #tribute {
     grid-column: 2/3;
   }
 
