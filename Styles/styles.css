@@ -2,19 +2,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto:ital@0;1&display=swap');
 
-* {
-  box-sizing: border-box;
-}
 html, body {
-  background-color: #303030;
   scroll-behavior: smooth;
   font-family: roboto, sans-serif;
   position: relative;
-  color: #FFF;
-}
-body {
-  padding-top: 1em;
-  height: auto;
+  background-color: #f8f8f8;
+  color: #212121;
 }
 
 /* Header */
@@ -25,9 +18,7 @@ body {
   width: 100%;
   overflow: hidden;
   display: flex;
-  background-color: #0e1215;
-  border-bottom: solid;
-  border-color: #89b0cd;
+  background-color: #fafafa;
   z-index: 1000;
 }
 #navbar {
@@ -35,10 +26,16 @@ body {
   flex-direction: row;
   align-items: center;
 }
+#navbar .nav-brand {
+  padding-left: 4rem;
+  color: #2F80ED;
+  font-size: 26px;
+}
 .nav-links ul {
   padding: 0;
   display: flex;
-  margin-left: 4em;
+  margin-left: 40rem;
+  font-size: 18px;
 }
 .nav-links li {
   list-style: none;
@@ -46,12 +43,15 @@ body {
   padding: 0.4em 0.8em;
 }
 .nav-link {
-  color: #FFF;
+  color: #212121;
   text-decoration: none;
   transition: 0.3s;
 }
 .nav-link:hover {
-  color: #00c9c8;
+  color: #2F80ED;
+}
+#navbar ul li a.active-page {
+  color: #9AE5DD;
 }
 
 /* Main */
@@ -78,36 +78,33 @@ h2, h6 {
 /* Welcome Section */
 
 #welcome-section {
-  background-color: #0e1215;
   text-align: center;
-  height: 100vh;
 }
-.overlay {
-  top: 0;
-  position: absolute;
-  margin: auto;
-  width: 100%;
-  height: 100vh;
-  background-color: rgba(0,0,0,.75);
+#welcome-section .container {
+  padding-top: 7rem;
 }
-.wrapper {
-  margin: 0 auto;
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+#welcome-section i {
+  font-size: 3.4rem;
 }
-#welcome-section p {
-  font-family: 'Dancing Script', cursive;
-  font-size: 5.2em;
-  margin: 0;
+#welcome-section .vector img {
+  height: 200px;
+}
+#welcome-section .btn {
+  padding-top: 4rem;
+}
+#welcome-section button {
+  height: 4rem;
+  width: 12rem;
+  background-color: #9AE5DD;
+  border: solid 1px #9AE5DD;
+  border-radius: 8px;
+  font-size: 1.8rem;
+  cursor: pointer;
 }
 
 /* Skill Section */
 
 #skills {
-  background-color: #fff;
   height: auto;
 
   
@@ -444,7 +441,7 @@ footer p {
   h1 {
     font-size: 4.4em;
     font-weight: bold;
-    margin: 0 4em 1em;
+    margin: 0 4em .2em;
   }
 
   /* Skills */
@@ -658,31 +655,7 @@ footer p {
   }
 }
 
-@media only screen and (min-width: 900px) {
-  #welcome-section {
-    background-image: url("/Img/black-flat-screen-computer-monitor-Large.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-}
-
-@media only screen and (min-width: 600px) and (max-width: 900px) {
-  #welcome-section {
-    background-image: url("/Img/black-flat-screen-computer-monitor-Medium.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 900px;
-  }
-}
-
 @media only screen and (max-width: 600px) {
-
-  #welcome-section {
-    background-image: url("/Img/black-flat-screen-computer-monitor-Small.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 600px;
-  }
 
   /* Nav */
 
