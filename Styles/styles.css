@@ -58,9 +58,6 @@ h2, h6 {
 #welcome-section {
   text-align: center;
 }
-#welcome-section .container {
-  padding-top: 7rem;
-}
 #welcome-section i {
   font-size: 3.4rem;
 }
@@ -454,6 +451,10 @@ footer p {
     margin: 0 4em .2em;
   }
 
+  #welcome-section .container {
+    padding-top: 10rem;
+  }
+
   /* Skills */
 
   h6 {
@@ -606,6 +607,9 @@ footer p {
 
   #welcome-section p {
     margin: 0 .8em;
+  }
+  #welcome-section .container {
+    padding-top: 7rem;
   }
 
   /* Skills */
