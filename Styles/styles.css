@@ -61,8 +61,11 @@ h2, h6 {
 #welcome-section i {
   font-size: 3.4rem;
 }
+#welcome-section p {
+  font-size: 1.8em;
+}
 #welcome-section .vector img {
-  height: 200px;
+  height: 220px;
 }
 #welcome-section .btn {
   padding-top: 2rem;
@@ -605,11 +608,11 @@ footer p {
 
   /* Welcome */
 
-  #welcome-section p {
-    margin: 0 .8em;
-  }
   #welcome-section .container {
     padding-top: 7rem;
+  }
+  #welcome-section p {
+    margin: 0 .8em;
   }
 
   /* Skills */
@@ -763,18 +766,14 @@ footer p {
   h2, h6 {
     font-size: 2em;
   }
-
-  #welcome-section p {
-    font-size: 3.3em;
-  }
   h1 {
     font-size: 2.5em;
   }
 
   /* Welcome */
 
-  .desc {
-    font-size: 8px;
+  #welcome-section p {
+    font-size: 3em;
   }
 
   /* Skills */
