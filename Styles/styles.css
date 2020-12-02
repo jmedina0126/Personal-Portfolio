@@ -516,7 +516,7 @@ footer p {
     position: fixed;
     background-color: #262626;
     top: 0;
-    right: -360px;
+    right: -400px;
     transition: right 0.8s cubic-bezier(1, 0, 0, 1);
 
     display: flex;
