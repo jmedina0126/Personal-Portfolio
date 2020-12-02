@@ -16,9 +16,9 @@ html, body {
   overflow: hidden;
   z-index: 1000;
 }
+
 .navbar .nav-brand {
   color: #2F80ED;
-  font-size: 26px;
 }
 .nav-links ul {
   padding: 0;
@@ -427,8 +427,13 @@ footer p {
     flex-direction: row;
     align-items: center;
   }
-  #navbar .nav-brand {
-    margin-left: 4rem;
+  .nav-container {
+    display: flex;
+    flex-direction: row;
+  }
+  .navbar .nav-brand {
+    margin: auto 4rem;
+    font-size: 26px;
   }
   .nav-links ul {
     margin-left: 35rem;
@@ -516,7 +521,7 @@ footer p {
     position: fixed;
     background-color: #262626;
     top: 0;
-    right: -400px;
+    right: -500px;
     transition: right 0.8s cubic-bezier(1, 0, 0, 1);
 
     display: flex;
@@ -529,9 +534,9 @@ footer p {
   .nav-container {
     margin-top: 10rem;
   }
-  #navbar .nav-brand {
-    margin-left: 1.8rem;
-  }
+  /*.navbar .nav-brand {
+    margin-left: .5rem;
+  } */
   .nav-links ul {
     display: flex;
     flex-direction: column;
@@ -711,8 +716,8 @@ footer p {
 
   /* Projects page */
 
-.main-container {
-  background: #fff;
+  .main-container {
+    background: #fff;
 }
   #projects {
     width: 100vw;
