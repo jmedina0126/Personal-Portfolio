@@ -12,7 +12,7 @@ html, body {
 
 /* Header */
 
-#nav-header {
+#nav-header, .navbar {
   overflow: hidden;
   z-index: 1000;
 }
@@ -521,11 +521,13 @@ footer p {
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
   }
   .change {
     right: 0;
+  }
+  .nav-container {
+    margin-top: 10rem;
   }
   #navbar .nav-brand {
     margin-left: 1.8rem;
@@ -533,6 +535,7 @@ footer p {
   .nav-links ul {
     display: flex;
     flex-direction: column;
+    font-size: 22px;
   }
   .nav-link {
     color: #00c9c8;
