@@ -58,6 +58,9 @@ h2, h6 {
 #welcome-section {
   text-align: center;
 }
+#welcome-section .container {
+  padding-top: 7rem;
+}
 #welcome-section i {
   font-size: 3.4rem;
 }
@@ -66,9 +69,6 @@ h2, h6 {
 }
 #welcome-section .vector img {
   height: 220px;
-}
-#welcome-section .btn {
-  padding-top: 2rem;
 }
 #welcome-section button {
   height: 4rem;
@@ -454,10 +454,6 @@ footer p {
     margin: 0 4em .2em;
   }
 
-  #welcome-section .container {
-    padding-top: 10rem;
-  }
-
   /* Skills */
 
   h6 {
@@ -608,9 +604,6 @@ footer p {
 
   /* Welcome */
 
-  #welcome-section .container {
-    padding-top: 7rem;
-  }
   #welcome-section p {
     margin: 0 .8em;
   }
