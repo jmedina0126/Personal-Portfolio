@@ -5,6 +5,7 @@
 html, body {
   scroll-behavior: smooth;
   font-family: roboto, sans-serif;
+  font-size: 10px;
   position: relative;
   background-color: #f8f8f8;
   color: #212121;
@@ -19,17 +20,17 @@ html, body {
 
 .navbar .nav-brand {
   color: #2F80ED;
-  font-size: 32px;
+  font-size: 3.2em;
 }
 .nav-links ul {
   padding: 0;
   display: flex;
-  font-size: 26px;
+  font-size: 2.3em;
 }
 .nav-links li {
   list-style: none;
   cursor: pointer;
-  padding: 0.4rem 1rem;
+  padding: 0 1rem;
 }
 .nav-link {
   color: #212121;
@@ -44,11 +45,11 @@ html, body {
 /* Main */
 
 section {
-  padding-top: 0.2em;
+  padding-top: 0.4rem;
 }
 h2, h6 {
-  font-size: 2.6em;
-  margin-top: 1.8em;
+  font-size: 8em;
+  margin-top: 1.8rem;
   text-align: center;
   color: #333;
 }
@@ -57,138 +58,57 @@ h2, h6 {
 
 #welcome-section {
   text-align: center;
+  padding-bottom: 7rem;
 }
 #welcome-section i {
-  font-size: 3.4rem;
+  font-size: 5em;
 }
 #welcome-section p {
-  font-size: 1.8em;
+  font-size: 2.6em;
 }
 #welcome-section .vector img {
   height: 220px;
 }
 #welcome-section button {
-  height: 4rem;
-  width: 12rem;
+  height: 6.5rem;
+  width: 18.8rem;
   background-color: #9AE5DD;
   border: solid 1px #9AE5DD;
   border-radius: 8px;
-  font-size: 1.8rem;
+  font-size: 3em;
   cursor: pointer;
 }
 
-/* Skill Section */
+/* Services Section */
 
-#skills {
-  height: auto;
-
-  
+#services {
   display: grid;
-  grid-template-columns: repeat(5, 200px);
-  grid-template-rows: repeat(9, 100px);
-  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 4rem 0;
+}
+#services .container {
+  padding: 0 4rem;
+  font-size: 2rem;
+  line-height: 1.5;
+}
+#services .icon {
+  padding: 2rem 0;
   text-align: center;
-
-  grid-template-areas:
-  ". . . . ."
-  "html . . about1 about1"
-  "html css . about1 about1"
-  ". css . about1 about1"
-  ". . . . ."
-  "about2 about2 . . mobile"
-  "about2 about2 . tablet mobile"
-  "about2 about2 . tablet ."
-  ". . . . ."
-  /*
-  ". about3 about3 about3 ."
-  ". . . . ."
-  ". about4 about4 about4 .";
-  
-  ". git . . ."
-  ". git . . ."
-  ". . . linux ."
-  ". github . linux ."
-  ". github . . ."
-  ". . . . .";
-  */
 }
-#skills p {
-  line-height: 30px;
+#services .icon .fa-mobile-alt {
+  background-color: teal;
 }
-
-.html-icon {
-  color: #e54c21;
-  grid-area: html;
-  align-self: center;
-  transition: 0.5s;
-  transform-origin: left;
+#services .icon .fa-wheelchair {
+  color: blue;
 }
-.css-icon {
-  color: #0170ba;
-  grid-area: css;
+#services .icon .fa-chart-line {
+  color: red;
 }
-.mobile-icon {
-  color: #302F2E;
-  grid-area: mobile;
-  align-self: end;
-  justify-self: start;
-}
-.tablet-icon {
-  color: #302F2E;
-  grid-area: tablet;
-  align-self: center;
-}
- /*
- Took these out for now as they clashed with the design and I felt they weren't relevant enough to adjust for, maybe, possibly, probably.
- .git-icon {
-  color: tomato;
-  grid-area: git;
-  align-self: end;
-}
-.github-icon {
-  color: #302F2E;
-  grid-area: github;
-  justify-self: end;
-}
-.linux-icon {
-  color: #302F2E;
-  grid-area: linux;
-  justify-self: start;
-} 
-*/
-
-/* About Me */
-
-#skills > h2 {
-  font-size: 2em;
-  margin: 0;
-}
-.about {
-  color: #595959;
-}
-#about-1 {
-  grid-area: about1;
-}
-#about-2 {
-  grid-area: about2;
-  align-self: center;
-}
-/*
-
-#about-3 {
-  grid-area: about3;
-}
-#about-4 {
-  grid-area: about4;
-} 
-*/
 
 /* Portfolio Section */
 
 #portfolio {
-  background-color: #FFF;
-  height: auto;
-  padding-bottom: 7rem;
+  padding-bottom: 20rem;
 }
 .tile-container {
   display: grid;
@@ -266,8 +186,8 @@ h4 {
 #projects {
   margin: auto;
   background-color: #fff;
-  width: 70em;
-  padding-bottom: 2em;
+  width: 70rem;
+  padding-bottom: 4em;
 }
 #pro-nav {
   height: 18em;
@@ -396,7 +316,7 @@ footer {
 }
 footer a {
   display: inline-block;
-  padding: 10px 10px 0;
+  padding: 1rem 1rem 0;
   color: #f5f5f5;
   transition: 0.5s;
   text-decoration: none;
@@ -407,8 +327,9 @@ footer a:hover {
   cursor: pointer;
 }
 footer p {
-  margin-top: 5px;
+  margin-top: .5rem;
   color: #f5f5f5;
+  font-size: 1.8em;
 }
 
 @media only screen and (min-width: 1120px) {
@@ -430,10 +351,10 @@ footer p {
     flex-direction: row;
   }
   .navbar .nav-brand {
-    margin: auto 4rem;
+    margin: auto 6rem;
   }
   .nav-links ul {
-    margin-left: 20rem;
+    margin-left: 40rem;
   }
   .nav-link {
     transition: 0.3s;
@@ -446,31 +367,21 @@ footer p {
   }
 
   h1 {
-    font-size: 4.4em;
+    font-size: 5.5em;
     font-weight: bold;
     margin: 0 4em .2em;
   }
 
   #welcome-section .container {
-    padding-top: 3rem;
+    padding-top: 8rem;
   }
 
   /* Skills */
 
-  h6 {
-    margin: 1em 0;
-  }
-  #about p {
-    margin: 0 22em;
-  }
-  .skills-icon {
-    grid-template-columns: repeat(2, 27em);
-  }
-
   /* Portfolio */
 
   #portfolio > h2 {
-    font-size: 2.5em;
+    font-size: 4em;
     padding-bottom: 1em;
   }
 
@@ -614,71 +525,6 @@ footer p {
 
   /* Skills */
 
-  #skills {
-    grid-template-columns: repeat(2, 200px);
-    grid-template-rows: repeat(14, 100px);
-
-    grid-template-areas:
-    ". ."
-    "about1 about1"
-    "about1 about1"
-    ". ."
-    "html css"
-    "html css"
-    ". ."
-    ". ."
-    "about2 about2"
-    "about2 about2"
-    ". ."
-    "tablet mobile"
-    "tablet mobile"
-    ". ."
-    "about3 about3"
-    ". ."
-    "about4 about4"
-    ". .";
-    /*
-    "git github"
-    "git github"
-    "linux linux"
-    "linux linux"
-    ". .";
-    */
-    
-  }
-  .about-1 {
-    align-self: start;
-  }
-  h6 {
-    margin-bottom: 1em;
-  }
-
-  .html-icon, .css-icon {
-    align-self: end;
-  }
-  .mobile-icon {
-    justify-self: center;
-    align-self: center;
-  }
-  .tablet-icon {
-    justify-self: end;
-    align-self: center;
-  }
-
-  /*
-  .github-icon {
-    justify-self: center;
-    align-self: center;
-  }
-  .linux-icon {
-    justify-self: center;
-  }
-  */
-
-  #skills, #portfolio {
-    padding-bottom: 2em;
-  }
-
   /* Portfolio */
 
   #portfolio {
@@ -775,10 +621,6 @@ footer p {
   }
 
   /* Skills */
-
-  #skills p {
-    padding: 0 2.5rem;
-  }
 
   /* Portfolio */
 
