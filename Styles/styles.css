@@ -456,6 +456,7 @@ footer p {
   .nav-links ul {
     display: flex;
     flex-direction: column;
+    font-size: 3em;
   }
   .nav-links ul li {
     padding: .8rem 0;
