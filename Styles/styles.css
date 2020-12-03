@@ -83,7 +83,6 @@ h2, h6 {
 
 #services {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
   padding: 4rem 0;
 }
 #services .container {
@@ -376,7 +375,11 @@ footer p {
     padding-top: 8rem;
   }
 
-  /* Skills */
+  /* Services section */
+
+  #services {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 
   /* Portfolio */
 
@@ -433,7 +436,7 @@ footer p {
     position: fixed;
     background-color: #262626;
     top: 0;
-    right: -500px;
+    right: -600px;
     transition: right 0.8s cubic-bezier(1, 0, 0, 1);
 
     display: flex;
@@ -523,7 +526,11 @@ footer p {
     padding-top: 5rem;
   }
 
-  /* Skills */
+  /* Services */
+
+  #services {
+    grid-template-columns: 1fr;
+  }
 
   /* Portfolio */
 
