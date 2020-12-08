@@ -85,11 +85,8 @@ nav {
 
 /* Welcome Section */
 
-#welcome {
-  height: 100vh;
-}
-
 #welcome .container {
+  height: 100vh;
   padding: 20rem 10rem;
   
   display: grid;
