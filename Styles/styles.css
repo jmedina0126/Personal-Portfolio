@@ -134,6 +134,7 @@ h1 {
 #services .container {
   max-width: 1150px;
   text-align: center;
+  padding-bottom: 8rem;
 
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
