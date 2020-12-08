@@ -160,14 +160,8 @@ h1 {
   padding: 2rem 0;
   text-align: center;
 }
-#services .icon .fa-mobile-alt {
-  background-color: teal;
-}
-#services .icon .fa-wheelchair {
-  color: blue;
-}
-#services .icon .fa-chart-line {
-  color: red;
+.icon img {
+  height: 12rem
 }
 
 /* Portfolio Section */
