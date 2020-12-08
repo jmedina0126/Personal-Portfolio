@@ -457,20 +457,27 @@ footer p {
     font-size: 4.8rem;
   }
   section {
-    padding: 4rem;
+    padding: 3rem;
   }
 
   /* Welcome */
 
   #welcome .container {
     text-align: center;
+    padding: 5rem 0;
+  }
+  .intro {
+    padding: 5rem 0 0;
   }
   #welcome i {
-    font-size: 4rem;
+    font-size: 3rem;
   }
   #welcome p {
     font-size: 2.4rem;
     padding: 1rem;
+  }
+  #welcome .self-illus img {
+    height: 20em;
   }
 
   /* Services */
@@ -487,6 +494,18 @@ footer p {
 
   #portfolio {
     padding: 1rem;
+  }
+  .card {
+    padding: 5rem 1rem;
+  }
+  .bc-left, .bc-btn {
+    padding: 0 .5rem;
+  }
+
+  /* Footer */
+
+  footer p {
+    font-size: 1.5rem;
   }
 }
 
