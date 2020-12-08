@@ -11,7 +11,8 @@
     <!-- SEO -->
 
     <meta charset="UTF-8">
-    <meta name="description" content="Aspiring Web Developer based in Stoke-On-Trent.">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Web Developer based in Stoke-On-Trent.">
     <meta name="keywords" content="HTML, CSS, Web developer, Web design">
     <meta name="author" content="Jemar Medina">
 
@@ -33,318 +34,220 @@
 
   </head>
 
-  <body id="pageone">
-    <div id="contone" class="main-container">
+  <body>
 
-      <!-- Header -->
+    <!-- Header -->
 
-      <header id="nav-header">
+    <header>
 
-        <nav class="navbar">
+      <div class="logo"><img src="Img/Logo.png" alt="logo"></div>
 
-          <div class="nav-container">
+      <div class="hamburger-menu">
+          <div class="line line-1"></div>
+          <div class="line line-2"></div>
+          <div class="line line-3"></div>
+        </div>
 
-            <div class="nav-brand">
-              <span>Jemar Medina</span>
-            </div>
+      <nav>
 
-            <div class="hamburger-menu">
-              <div class="line line-1"></div>
-              <div class="line line-2"></div>
-              <div class="line line-3"></div>
-            </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Projects</a></li>
+        </ul>
 
-            <div class="nav-links">
-              <ul>
-                <li><a class="nav-link active" href="#welcome-section">Home</a></li>
-                <li><a class="nav-link" href="#about">About</a></li>
-                <li><a class="nav-link" href="#services">Services</a></li>
-                <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
-                <li><a class="nav-link" href="#contact">Contact</a></li>
-              </ul>
-            </div>
+      </nav>
 
-          </div>
+      <a class="cta" href="#index.html"><button>Contact</button></a>
 
-        </nav>
+    </header>
 
-      </header>
+    <main>
 
-      <main>
+      <!-- Welcome Section -->
 
-        <!-- Welcome Section -->
+      <section id="welcome">
 
-        <section id="welcome-section">
+        <div class="intro">
+          <i>Jemar Medina</i>
+          <h1>Web developer</h1>
+        </div>
 
-          <div class="container">
+        <div class="self-illus">
+          <img src="Img/self-vector-laptop.svg" aria-hidden="true">
+        </div>
 
-            <div class="intro">
-              <i>Jemar Medina</i>
-              <h1>Web developer</h1>
-            </div>
+        <div class="pint">
+          <p>Improving your online presence and increasing your customer base</p>
+        </div>
 
-            <div class="vector">
-              <img src="Img/self-vec-laptop.png">
-            </div>
+      </section>
 
-            <div>
-              <p>Clean and accessible website with easy to find information relevant to the targeted audience.</p>
-            </div>
+      <!-- Services Section -->
 
-            <div class=" btn">
-              <button href="#contact">Contact us</button>
-            </div>
+      <section id="services">
 
-          </div>
+        <div class="title">
+          <h3>What we do</h3>
+        </div>
 
-        </section>
+        <div class="container">
 
-        <!-- Services Section -->
-
-        <section id="services">
-
-          <div class="container">
+          <div class="wrapper">
             <div class="icon">
-              <i class="fas fa-mobile-alt fa-5x" aria-hidden="true"></i>
+              <i class="fas fa-code fa-3x" aria-hidden="true"></i>
             </div>
-            <p>Responsive on all devices so no matter where your client tries to view your site they'll be able to access it</p>
+            <h3>Custom Development</h3>
+            <p>Hand written code custome for the spec and ethos of the site. </p>
           </div>
 
-          <div class="container">
+          <div class="wrapper">
             <div class="icon">
-              <i class="fas fa-wheelchair fa-5x" aria-hidden="true"></i>
+              <i class="fas fa-mobile-alt fa-3x" aria-hidden="true"></i>
             </div>
-            <p>Accessibility in mind following guidelines to ensure the best user experience no matter the person or preference</p>
-
+            <h3>Responsive Website</h3>
+            <p>Works on all devices so clients, no matter where they are, are able to access the site</p>
           </div>
 
-          <div class="container">
+          <div class="wrapper">
             <div class="icon">
-              <i class="fas fa-chart-line fa-5x" aria-hidden="true"></i>
+              <i class="fas fa-wheelchair fa-3x" aria-hidden="true"></i>
             </div>
-            <p>Optimised for best website performance to increase visitor attention and loyalty</p>
-
+            <h3>Accessibility</h3>
+            <p>Follows the up to date guidlines recommended</p>
           </div>
 
-        </section>
+          <div class="wrapper">
+            <div class="icon">
+              <i class="fas fa-chart-line fa-3x" aria-hidden="true"></i>
+            </div>
+            <h3>Optimised Web Performance</h3>
+            <p>Improve user experience and increase customer conversion</p>
+          </div>
 
-        <!-- Portfolio Section -->
+          <div class="wrapper">
+            <div class="icon">
+              <i class="fas fa-search fa-3x" aria-hidden="true"></i>
+            </div>
+            <h3>SEO Optimised</h3>
+            <p>Increase traffic of targeted audience</p>
+          </div>
 
-        <section id="portfolio">
-          <h2>Projects</h2>
-          <div class="tile-container">
+          <div class="wrapper">
+            <div class="icon">
+              <i class="fas fa-users fa-3x" aria-hidden="true"></i>
+            </div>
+            <h3>Social Media Managment</h3>
+            <p>Manage your online presence</p>
+          </div>
 
-            <figure id="stopwatch" class="project-tile">
+      </div>
 
-              <figcaption>Stopwatch - HTML / CSS / Javascript</figcaption>
-              <img class="project-image" src="Img\Stopwatch_screenshot.png" alt="screen capture of stopwatch web application">
+      </section>
 
-                <div class="tile-text">
-                  <h4>Stopwatch</h4>
-                  <p>HTML / CSS / Javascript</p>
+      <!-- Portfolio Section -->
 
-                  <div class="dsk-lnks">
+      <section id="portfolio">
 
-                    <a class="dsk-lnk" href="https://jmedina0126.github.io/Stopwatch/" target="_blank">
-                      <span>View site</span>
-                    </a>
+        <div class="card">
+          <div class="wrapper">
 
-                    <a class="dsk-lnk" href="https://github.com/jmedina0126/Stopwatch" target="_blank">
-                      <span>View code</span>
-                    </a>
+            <div class="top-card">
+              <img src="Img/Screenshot from 2020-12-08 08-38-42.png" alt="Preview of mock tree surgeon website">
+            </div>
 
-                  </div>
-
-                </div>
-
-                <div class="mob-lnks">
-
-                  <a class="mob-lnk" href="https://jmedina0126.github.io/Stopwatch/" target="_blank">
-                    <span>View site</span>
-                  </a>
-
-                  <a class="mob-lnk" href="https://github.com/jmedina0126/Stopwatch" target="_blank">
-                    <span>View code</span>
-                  </a>
-
-                </div>
-              </figure>
-
-            <figure id="rps" class="project-tile">
-
-              <figcaption>Rock Paper Scissors - HTML / CSS / Javascript</figcaption>
-              <img class="project-image" src="Img/rock-paper-scissors.png" alt="screen capture of rock paper scissors game">
-
-                <div class="tile-text">
-                  <h4>Rock Paper Scissors Game</h4>
-                  <p>HTML / CSS / Javascript</p>
-
-                  <div class="dsk-lnks">
-
-                    <a class="dsk-lnk" href="https://jmedina0126.github.io/rock-paper-scissors/">
-                      <span>View site</span>
-                    </a>
-
-                    <a class="dsk-lnk" href="https://github.com/jmedina0126/rock-paper-scissors" target="_blank">
-                      <span>View code</span>
-                    </a>
-
-                  </div>
-
-                </div>
-
-                <div class="mob-lnks">
-
-                  <a class="mob-lnk" href="https://jmedina0126.github.io/rock-paper-scissors/">
-                    <span>View site</span>
-                  </a>
-
-                  <a class="mob-lnk" href="https://github.com/jmedina0126/rock-paper-scissors" target="_blank">
-                    <span>View code</span>
-                  </a>
-
-                </div>
-              </figure>
-
-            <figure id="google" class="project-tile"> 
-
-              <figcaption>Google Homepage Reconstruction - HTML / CSS</figcaption>  
-              <img class="project-image" src="Img/google-reconstruction.png" alt="screen capture of reconstructed google web page">
-
-              <div class="tile-text">
-                <h4>Google Homepage Reconstruction</h4>
-                <p>HTML / CSS</p>
-
-                <div class="dsk-lnks">
-
-                  <a class="dsk-lnk" href="https://jmedina0126.github.io/google-homepage/">
-                    <span>View site</span>
-                  </a>
-
-                  <a class="dsk-lnk" href="https://github.com/jmedina0126/google-homepage" target="_blank">
-                    <span>View code</span>
-                  </a>
-
-                </div>
-
+            <div class="bottom-card">
+              <div class="bc-left">
+                <h4><b>Mock Arborist Website</b></h4>
+                <p> HTML | CSS | BootStrap </p>
               </div>
-
-              <div class="mob-lnks">
-
-                <a class="mob-lnk" href="https://jmedina0126.github.io/google-homepage/"><span>View site</span></a>
-                
-                <a class="mob-lnk" href="https://github.com/jmedina0126/google-homepage" target="_blank">
-                  <span>View code</span>
-                </a>
-
-              </div>
-
-            </figure>
-
-            <figure id="technical" class="project-tile">
-
-              <figcaption>Technical Document - HTML / CSS</figcaption>
-              <img class="project-image" src="Img/Technical-Document-sc.png?raw=true" alt="screen capture of technical document web page">
-
-              <div class="tile-text">
-
-                <h4>Technical Document</h4>
-                <p>HTML / CSS</p>
-
-                <div class="dsk-lnks">
-                  <a class="dsk-lnk" href="https://codepen.io/jmedina0126/pen/eYNrmvw/">
-                    <span>View site</span>
-                  </a>
-                </div>
-
-              </div>
-
-              <div class="mob-lnks">
-                <a class="mob-lnk" href="https://codepen.io/jmedina0126/pen/eYNrmvw/"><span>View site</span></a>
-              </div>
-
-            </figure>
-
-            <figure id="survey" class="project-tile"> 
-
-              <figcaption>Survey Form - HTML / CSS</figcaption>
-              <img class="project-image" src="Img/Survey-form-sc.png" alt="screen capture of survey form web page">
               
-              <div class="tile-text">
-
-                <h4>Survey Form</h4>
-                <p>HTML / CSS</p>
-
-                <div class="dsk-lnks">
-                  <a class="dsk-lnk" href="https://codepen.io/jmedina0126/pen/NWqNrKE">
-                    <span>View site</span>
-                  </a>
-                </div>
-
+              <div class="bc-right">
+                <a class="bc-btn" href="https://jmedina0126.github.io/Medici-Lignum/" target="_blank"><button>View Project</button></a>
               </div>
+            </div>
 
-              <div class="mob-lnks">
-              <a class="mob-lnk" href="https://codepen.io/jmedina0126/pen/NWqNrKE"><span>View site</span></a>
-              </div>
-
-            </figure>
-
-            <figure id="tribute" class="project-tile">
-
-              <figcaption>Tribute Page - HTML / CSS</figcaption>
-              <img class="project-image" src="Img/Tribute-page-sc.png" alt="screen capture of tribute page web page">
-              
-              <div class="tile-text">
-
-                <h4>Tribute Page</h4>
-                <p>HTML / CSS</p>
-
-                <div class="dsk-lnks">
-                  <a class="dsk-lnk" href="https://codepen.io/jmedina0126/pen/YzXqqbQ">
-                    <span>View site</span>
-                  </a>
-                </div>
-
-              </div>
-
-              <div class="mob-lnks">
-                <a class="mob-lnk" href="https://codepen.io/jmedina0126/pen/YzXqqbQ"><span>View site</span></a>
-              </div>
-
-            </figure>
-          
           </div>
-        </section>
+        </div>
 
-      </main>
+        <div class="card">
+          <div class="wrapper">
 
-      <!-- Footer -->
+            <div class="top-card">
+              <img src="Img/Stopwatch_screenshot.png" alt="Preview of stopwatch web app">
+            </div>
 
-      <footer id="contact">
-        <div id="contact-icons">
+            <div class="bottom-card">
+              <div class="bc-left">
+                <h4><b>Stopwatch</b></h4>
+                <p> HTML | CSS | JavaScript </p>
+              </div>
 
-          <a id="profile-link" href="https://github.com/jmedina0126">
-            <i class="fab fa-github fa-5x"></i>
-          </a>
-          
-          <a href="https://www.linkedin.com/in/jemar-medina/">
-            <i class="fab fa-linkedin fa-5x"></i>
-          </a>
+              <div class="bc-right">
+                <a class="bc-btn" href="https://jmedina0126.github.io/Stopwatch/" target="_blank"><button>View Project</button></a>
+              </div>
+            </div>
 
-          <a href="https://www.instagram.com/j.medina0126/">
-            <i class="fab fa-instagram fa-5x"></i>
-          </a>
+          </div>
+        </div>
 
-          <a href="https://www.freecodecamp.org/jmedina0126">
-            <i class="fab fa-free-code-camp fa-5x"></i>
-          </a>
+        <div class="card">
+          <div class="wrapper">
 
-        </div>    
-        <p>Email: j.medina0126@gmail.com</p>
-      </footer>
+            <div class="top-card">
+              <img src="Img/rock-paper-scissors.png" alt="Preview of Rock paper scissors web app">
+            </div>
+
+            <div class="bottom-card">
+              <div class="bc-left">
+                <h4><b>Rock paper scissor</b></h4>
+                <p> HTML | CSS | JavaScript </p>
+              </div>
+
+              <div class="bc-right">
+                <a class="bc-btn" href="https://jmedina0126.github.io/rock-paper-scissors/" target="_blank"><button>View Project</button></a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </section>
+
+    </main>
+
+    <!-- Footer -->
+
+    <footer id="contact">
+
+      <div id="contact-icons">
+
+        <a id="profile-link" href="https://github.com/jmedina0126">
+          <i class="fab fa-github fa-5x"></i>
+        </a>
         
-    </div>
+        <a href="https://www.linkedin.com/in/jemar-medina/">
+          <i class="fab fa-linkedin fa-5x"></i>
+        </a>
+
+        <a href="https://www.instagram.com/j.medina0126/">
+          <i class="fab fa-instagram fa-5x"></i>
+        </a>
+
+        <a href="https://www.freecodecamp.org/jmedina0126">
+          <i class="fab fa-free-code-camp fa-5x"></i>
+        </a>
+
+      </div>
+
+      <div class="branding">
+        <p>Copyright © 2020 | Jemar Medina | All Rights Reserved</p>
+      </div>
+
+    </footer>
 
     <script src="script.js"></script>
+
   </body>
 </html>
