@@ -59,11 +59,51 @@
 
       </nav>
 
-      <a class="cta" href="#index.html"><button>Contact</button></a>
+      <a class="cta" id="popup" onclick="div_show()"><button>Contact</button></a>
 
     </header>
 
     <main>
+
+      <!-- Form Section -->
+
+      <section id="form">
+
+        <div id="abc">
+
+            <div id="popupContact">
+
+                <form action="POST" data-netlify="true">
+
+                    <i id="close" class="far fa-window-close fa-4x" onclick ="div_hide()"><span></span></i>
+                    <h2>Contact Us</h2>
+                    <hr>
+
+                    <div class="input">
+                      <i class="fas fa-user"></i>
+                      <input id="name" name="name" placeholder="Name" type="text">
+                    </div>
+
+                    <div class="input">
+                      <i class="fas fa-at"></i>
+                      <input id="email" name="email" placeholder="Email" type="text">
+                    </div>
+
+                    <div id="b-in" class="input">
+                      <i class="fas fa-envelope"></i>
+                      <textarea id="msg" name="message" placeholder="Message"></textarea>
+                    </div>
+
+                    <div data-netlify-recaptcha="true"></div>
+                    <a href="javascript:%20check_empty()" id="submit">Send</a>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
 
       <!-- Welcome Section -->
 

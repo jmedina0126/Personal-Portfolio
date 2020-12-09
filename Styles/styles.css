@@ -15,28 +15,6 @@ html, body {
   color: #212121;
 }
 
-/* Main */
-
-.container {
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
- .title {
-  text-align: center;
-  font-size: 3rem;
-  letter-spacing: .2rem;
-}
-p {
-  color: #6C63FF;
-}
-hr {
-  border: 0;
-  height: 1px;
-  background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0), rgba(108,99,255,.75), rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0));
-}
 
 /* Header */
 
@@ -58,7 +36,7 @@ header {
 .logo {
   cursor: pointer;
   font-size: 2.5rem;
-  color: #24252A;
+  color: #0a0a0a;
 }
 .logo img {
   height: 6rem;
@@ -83,17 +61,141 @@ nav {
 }
 .cta button {
   padding: 1rem 2.5rem;
-  background-color: rgba(0, 136, 169, 1);
+  background-color: rgba(0,171,214,1);
   border: none;
   border-radius: 50px;
   cursor: pointer;
   transition: all 0.3s ease 0s;
 }
 .cta button:hover {
-  background-color: rgba(0, 136, 169, 0.8);
+  background-color: rgba(0,171,214,.8);
 }
 .hamburger-menu {
   display: none;
+}
+
+/* Main */
+
+.container {
+  width: 100%;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+ .title {
+  text-align: center;
+  font-size: 3rem;
+  letter-spacing: .2rem;
+}
+p {
+  color: #6C63FF;
+}
+hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0), rgba(108,99,255,.75), rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0));
+}
+
+/* Form Section */
+
+
+#abc {
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+  display:none;
+  position:fixed;
+  background-color:rgba(0,0,0,.95);
+  overflow:auto
+}
+#close {
+  position:absolute;
+  right: -14px;
+  top: -14px;
+  cursor:pointer;
+  color: #f8f8f8;
+}
+#popupContact {
+  position:absolute;
+  left:50%;
+  top:50%;
+  transform: translate(-50%, -50%);
+}
+form {
+  width: 50em;
+  height: 80em;
+  padding: 1rem 5rem;
+  border-radius: 10px;
+  background-color:#f8f8f8
+}
+.fas {
+  font-size: 3em;
+}
+#form p {
+  margin-top:30px
+}
+#form h2 {
+  background-color:#0088a9;
+  color: #0a0a0a;
+  font-size: 2.5rem;
+  padding: 3rem 3rem;
+  margin:-1rem -5rem;
+  text-align:center;
+  border-radius:10px 10px 0 0
+}
+#form hr {
+  margin:10px -50px;
+  border:0;
+  border-top:1px solid #ccc;
+  background-image: none;
+}
+#form input[type=text] {
+  width:80%;
+  padding: 1rem;
+  margin-top: 3rem;
+  border:1px solid #ccc;
+  font-size: 1.6rem;
+}
+#name {
+
+}
+#email {
+
+}
+#b-in {
+  display: flex;
+  flex-direction: row;
+}
+.fa-envelope {
+  margin: 2.8rem .5rem 0 0;
+}
+#form textarea {
+  width:80%;
+  height: 20rem;
+  padding: 1rem;
+  resize:none;
+  margin : 3rem 0;
+  border:1px solid #ccc;
+  font-size: 1.6rem;
+}
+#submit {
+  text-decoration:none;
+  width:100%;
+  text-align:center;
+  display:block;
+  background-color:rgba(0,171,214,1);
+  color:#0a0a0a;
+  border:1px solid rgba(0,171,214,1);
+  padding: 2rem 0;
+  font-size: 2rem;
+  cursor:pointer;
+  border-radius:5px;
+  margin-top: 10rem;
+}
+#submit:hover {
+  background-color: rgba(0,171,214,.8);
 }
 
 /* Welcome Section */
@@ -216,14 +318,15 @@ h1 {
   font-weight: 300;
   text-decoration: none;
   padding: 1rem 2.5rem;
-  background-color: rgba(0, 136, 169, 1);
+  background-color: rgba(0,171,214,1);
+  color: #0a0a0a;
   border: none;
   border-radius: 50px;
   cursor: pointer;
   transition: all 0.3s ease 0s;
 }
 .bc-btn button:hover {
-  background-color: rgba(0, 136, 169, 0.8);
+  background-color: rgba(0,171,214,0.8);
 }
 
 /* Footer */
@@ -399,6 +502,22 @@ footer p {
       display: none;
   }
 
+  /* form */
+
+  form {
+    width: 30em;
+    height: 50em;
+  }
+  #submit {
+    margin-top: 5rem;
+  }
+  #close {
+    font-size: 3em;
+  }
+  .fas {
+    font-size: 2.5em;
+  }
+
   /* Welcome */
 
   #welcome .container {
@@ -472,11 +591,31 @@ footer p {
     padding: 3rem;
   }
 
+  /* Form */
+
+  form {
+    width: 23em;
+    height: 40em;
+  }
+  .fas {
+    font-size: 2em;
+  }
+  #form textarea {
+    height: 10rem;
+  }
+  #submit {
+    margin-top: 0;
+    padding: 1rem 0;
+  }
+  #close {
+    font-size: 2.5em;
+  }
+
   /* Welcome */
 
   #welcome .container {
     text-align: center;
-    padding: 5rem 0;
+    padding: 2rem 0 5rem;
   }
   .intro {
     padding: 5rem 0 0;
@@ -485,7 +624,8 @@ footer p {
     font-size: 3rem;
   }
   #welcome .self-illus img {
-    height: 18em;
+    height: 14em;
+    padding-top: 3rem;
   }
   .pint {
     font-size: 1.6rem;
