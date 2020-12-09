@@ -128,7 +128,7 @@ hr {
 }
 form {
   width: 50em;
-  height: 65em;
+  height: 60em;
   padding: 1rem 5rem;
   border-radius: 10px;
   background-color:#f8f8f8
@@ -170,7 +170,7 @@ form {
 }
 #form textarea {
   width:80%;
-  height: 20rem;
+  height: 15rem;
   padding: 1rem;
   resize:none;
   margin : 3rem 0;
