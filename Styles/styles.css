@@ -70,6 +70,9 @@ nav {
 .cta button:hover {
   background-color: rgba(0,171,214,.8);
 }
+#popup-m {
+  display: none;
+}
 .hamburger-menu {
   display: none;
 }
@@ -157,12 +160,6 @@ form {
   margin-top: 3rem;
   border:1px solid #ccc;
   font-size: 1.6rem;
-}
-#name {
-
-}
-#email {
-
 }
 #b-in {
   display: flex;
@@ -498,8 +495,12 @@ footer p {
     transform: rotateZ(45deg) translate(-8px, -6px);
     background-color: #edf0f1;
   }
-  .cta {
-      display: none;
+  #popup-d {
+    display: none;
+  }
+  #popup-m {
+    display: block;
+    padding-left: 4rem;
   }
 
   /* form */
