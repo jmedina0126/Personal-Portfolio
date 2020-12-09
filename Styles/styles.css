@@ -611,6 +611,9 @@ footer p {
   #close {
     font-size: 2.5em;
   }
+  .recaptcha {
+    width: 100%;
+  }
 
   /* Welcome */
 
