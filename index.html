@@ -75,7 +75,7 @@
 
             <div id="popupContact">
 
-                <form action="POST" data-netlify="true">
+                <form method="POST" data-netlify="true">
 
                     <i id="close" class="far fa-window-close fa-4x" onclick ="div_hide()"><span></span></i>
                     <h2>Contact Us</h2>
@@ -96,7 +96,7 @@
                       <textarea id="msg" name="message" placeholder="Message"></textarea>
                     </div>
 
-                    <div class="recaptcha" data-netlify-recaptcha="true"></div>
+                    <div data-netlify-recaptcha="true"></div>
                     <a href="javascript:%20check_empty()" id="submit">Send</a>
 
                 </form>
