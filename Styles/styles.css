@@ -99,6 +99,7 @@ nav {
 /* Welcome Section */
 
 #welcome .container {
+  height: 100vh;
   padding: 10rem;
   
   display: grid;
@@ -131,7 +132,7 @@ h1 {
   margin: auto;
 }
 #welcome .self-illus img {
-  height: 30em;
+  height: 40em;
 }
 
 .pint {
@@ -253,6 +254,12 @@ footer p {
 }
 
 @media only screen and (max-width: 1200px) {
+  #welcome .container {
+    height: auto;
+  }
+  #welcome .self-illus img {
+    height: 30em;
+  }
   #services .wrapper {
     padding: 10rem 5rem;
   }
