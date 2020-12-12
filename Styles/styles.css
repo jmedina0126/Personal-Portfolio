@@ -32,6 +32,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 15%;
+  z-index: 1000;
 }
 .logo {
   cursor: pointer;
@@ -79,6 +80,9 @@ nav {
 
 /* Main */
 
+section {
+  min-height: 100vh;
+}
 .container {
   width: 100%;
   padding-right: 1.5rem;
@@ -103,119 +107,32 @@ hr {
 /* Form Section */
 
 
-#abc {
-  width:100%;
-  height:100%;
-  top:0;
-  left:0;
-  display:none;
-  position:fixed;
-  background-color:rgba(0,0,0,.95);
-  overflow:auto
-}
-#close {
-  position:absolute;
-  right: -14px;
-  top: -14px;
-  cursor:pointer;
-  color: #f8f8f8;
-}
-#popupContact {
-  position:absolute;
-  left:50%;
-  top:50%;
-  transform: translate(-50%, -50%);
-}
-form {
-  width: 50em;
-  height: 60em;
-  padding: 1rem 5rem;
-  border-radius: 10px;
-  background-color:#f8f8f8
-}
-.fas {
-  font-size: 3em;
-}
-#form p {
-  margin-top:30px
-}
-#form h2 {
-  background-color:#0088a9;
-  color: #0a0a0a;
-  font-size: 2.5rem;
-  padding: 2rem 3rem;
-  margin:-1rem -5rem;
-  text-align:center;
-  border-radius:10px 10px 0 0
-}
-#form hr {
-  margin:10px -50px;
-  border:0;
-  border-top:1px solid #ccc;
-  background-image: none;
-}
-#form input[type=text] {
-  width:80%;
-  padding: 1rem;
-  margin-top: 3rem;
-  border:1px solid #ccc;
-  font-size: 1.6rem;
-}
-#b-in {
-  display: flex;
-  flex-direction: row;
-}
-.fa-envelope {
-  margin: 2.8rem .5rem 0 0;
-}
-#form textarea {
-  width:80%;
-  height: 15rem;
-  padding: 1rem;
-  resize:none;
-  margin : 3rem 0;
-  border:1px solid #ccc;
-  font-size: 1.6rem;
-}
-#submit {
-  text-decoration:none;
-  width:100%;
-  text-align:center;
-  display:block;
-  background-color:rgba(0,171,214,1);
-  color:#0a0a0a;
-  border:1px solid rgba(0,171,214,1);
-  padding: 2rem 0;
-  font-size: 2rem;
-  cursor:pointer;
-  border-radius:5px;
-  margin-top: 2rem;
-}
-#submit:hover {
-  background-color: rgba(0,171,214,.8);
-}
 
 /* Welcome Section */
 
 #welcome .container {
-  height: 100vh;
-  padding: 10rem;
+  padding: 8.6rem;
   
   display: grid;
-  grid-template-columns: .4fr .8fr .3fr;
+  grid-template-columns: 1fr .3fr;
   grid-template-rows: .7fr .4fr .1fr;
 
   grid-template-areas:
-  " img img img " 
   " int int int "
   " pint pint pint ";
 }
 
 .intro {
   font-family: 'Montserrat', sans-serif;
-  text-align: center;
   grid-area: int;
   margin: auto;
+}
+.stack {
+  position: absolute;
+  text-align: center;
+}
+.stack-top {
+  margin-top: 33rem;
 }
 #welcome i {
   font-size: 5rem;
@@ -225,12 +142,7 @@ h1 {
   font-weight: bold;
   margin: 0 0 .5rem;
 }
-
-#welcome .self-illus {
-  grid-area: img;
-  margin: auto;
-}
-#welcome .self-illus img {
+#welcome .intro img {
   height: 40em;
 }
 
@@ -245,6 +157,10 @@ h1 {
 
 /* Services Section */
 
+#services h3 {
+  color: #1b2025;
+  padding-top: 6rem;
+}
 #services .container {
   max-width: 1150px;
   text-align: center;
@@ -258,9 +174,6 @@ h1 {
   padding: 10rem 1rem;
   font-size: 1.6rem;
   line-height: 1.5;
-}
-#services h3 {
-  color: #1b2025;
 }
 #services .icon {
   padding: 2rem 0;
@@ -360,9 +273,6 @@ footer p {
   #welcome .container {
     height: auto;
   }
-  #welcome .self-illus img {
-    height: 30em;
-  }
   #services .wrapper {
     padding: 10rem 5rem;
   }
@@ -384,7 +294,7 @@ footer p {
   #welcome .container {
     padding: 5rem;
   }
-  #welcome .self-illus img {
+  #welcome .intro img {
     padding-top: 5rem;
   }
   .pint {
@@ -402,6 +312,9 @@ footer p {
 
   main {
     font-size: 1.4rem;
+  }
+  section {
+    min-height: 60vh;
   }
 
   /* Header */
@@ -508,19 +421,6 @@ footer p {
 
   /* form */
 
-  form {
-    width: 30em;
-    height: 50em;
-  }
-  #submit {
-    margin-top: 1rem;
-  }
-  #close {
-    font-size: 3em;
-  }
-  .fas {
-    font-size: 2.5em;
-  }
 
   /* Welcome */
 
@@ -528,24 +428,23 @@ footer p {
     padding: .5rem;
 
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr .7fr .5fr;
+    grid-template-rows: 1fr .5fr;
     grid-template-areas: 
-    " img "
     " int "
     " pint ";
   }
+  #welcome .intro img {
+    height: 28em;
+    padding-top: 8rem;
+  }
+  .stack-top {
+    margin-top: 35rem;
+  }
+  #welcome i {
+    font-size: 4.5rem;
+  }
   #welcome h1 {
     font-size: 6rem;
-  }
-  #welcome .self-illus {
-    text-align: center;
-  }
-  #welcome .self-illus img {
-    height: 20em;
-    padding-top: 10rem;
-  }
-  .pint {
-    padding: 4rem 0;
   }
   #welcome p {
     margin: 0 .8rem;
@@ -593,27 +492,12 @@ footer p {
   }
   section {
     padding: 3rem;
+    min-height: 50vh;
   }
 
   /* Form */
 
-  form {
-    width: 23em;
-    height: 40em;
-  }
-  .fas {
-    font-size: 2em;
-  }
-  #form textarea {
-    height: 10rem;
-  }
-  #submit {
-    margin-top: 0;
-    padding: 1rem 0;
-  }
-  #close {
-    font-size: 2.5em;
-  }
+
 
   /* Welcome */
 
@@ -622,14 +506,17 @@ footer p {
     padding: 2rem 0 5rem;
   }
   .intro {
-    padding: 5rem 0 0;
+    padding: 3rem 0 0;
   }
   #welcome i {
     font-size: 3rem;
   }
-  #welcome .self-illus img {
+  #welcome .intro img {
     height: 14em;
     padding-top: 3rem;
+  }
+  .stack-top {
+    margin-top: 22rem;
   }
   .pint {
     font-size: 1.6rem;
