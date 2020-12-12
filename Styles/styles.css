@@ -492,7 +492,7 @@ footer p {
   }
   section {
     padding: 3rem;
-    min-height: 50vh;
+    min-height: 30vh;
   }
 
   /* Form */
@@ -514,6 +514,10 @@ footer p {
   #welcome .intro img {
     height: 14em;
     padding-top: 3rem;
+  }
+  .stack {
+    position: relative;
+    text-align: center;
   }
   .stack-top {
     margin-top: 22rem;
