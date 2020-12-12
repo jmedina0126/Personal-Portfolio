@@ -503,7 +503,7 @@ footer p {
 
   #welcome .container {
     text-align: center;
-    padding: 2rem 0 5rem;
+    padding: 2rem 0 0;
   }
   .intro {
     padding: 3rem 0 0;
@@ -520,7 +520,7 @@ footer p {
     text-align: center;
   }
   .stack-top {
-    margin-top: 22rem;
+    margin-top: 2rem;
   }
   .pint {
     font-size: 1.6rem;
