@@ -246,7 +246,7 @@ h1 {
 }
 .err .home-btn {
   font-size: 1.8rem;
-  padding: 1rem 0 10rem;
+  padding: 1rem;
 }
 
 /* Footer */
@@ -255,7 +255,6 @@ footer {
   background-color: #24252A;
   position: absolute;
   text-align: center;
-  bottom: 0;
   height: auto;
   width: 100%;
   padding: 1rem;
