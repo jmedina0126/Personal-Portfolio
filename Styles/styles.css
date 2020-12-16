@@ -11,8 +11,8 @@ html, body {
   font-family: 'Montserrat Alternates', sans-serif;
   font-size: 10px;
   position: relative;
-  background-color: #f8f8f8;
-  color: #212121;
+  background-color: #f5f5f5;
+  color: #151c2f;
 }
 
 button {
@@ -41,7 +41,7 @@ nav li, nav a, .cta button {
 header {
   position: fixed;
   width: 100vw;
-  background-color: #f8f8f8;
+  background-color: #f5f5f5;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -99,7 +99,7 @@ section {
   letter-spacing: .2rem;
 }
 p {
-  color: #151c2f;
+  color: #56585D;
 }
 hr {
   border: 0;
@@ -162,7 +162,6 @@ h1 {
 /* Services Section */
 
 #services h3 {
-  color: #1b2025;
   padding-top: 6rem;
 }
 #services .container {
@@ -223,7 +222,6 @@ h1 {
 }
 .bc-left h4 {
   font-size: 3rem;
-  color: #1b2025;
 }
 .bc-right {
   margin: auto 0
@@ -252,7 +250,7 @@ h1 {
 /* Footer */
 
 footer {
-  background-color: #24252A;
+  background-color: #151c2f;
   position: absolute;
   text-align: center;
   height: auto;
@@ -262,12 +260,12 @@ footer {
 footer a {
   display: inline-block;
   padding: 1rem 1rem 0;
-  color: #f5f5f5;
+  color: #6C63FF;
   transition: 0.5s;
   text-decoration: none;
 }
 footer a:hover { 
-  color: #6C63FF;
+  color: #6996f8;
   transform: translateY(-10px);
   cursor: pointer;
 }
@@ -329,13 +327,13 @@ footer p {
   /* Header */
 
   header {
-    background-color: #fafafa;
+    background-color: #f5f5f5;
   }
   nav {
     width: 20rem;
     height: 100%;
     position: fixed;
-    background-color: #24252A;
+    background-color: #151c2f;
     top: 0;
     right: -600px;
     padding-top: 10rem;
@@ -349,7 +347,7 @@ footer p {
     right: 0;
   }
   .logo {
-      color: #24252A;
+      color: #151c2f;
       font-size: 2.5rem;
   }
   .nav-links {
@@ -480,7 +478,7 @@ footer p {
   /* Footer */
 
   footer a {
-    color: #0088a9;
+    color: #6c63ff;
   }
 }
 
