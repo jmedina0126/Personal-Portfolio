@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+
+    <link href="Styles/styles.css" rel="stylesheet" type="text/css"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Web Developer based in Stoke-On-Trent.">
+    <meta name="keywords" content="HTML, CSS, Web developer, Web design">
+    <meta name="author" content="Jemar Medina">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163365654-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-163365654-1');
+    </script>
+          
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/541fe80102.js" crossorigin="anonymous"></script>
+
+    <title>Jemar Medina - Web Developer</title>
+
+  </head>
+
+  <body>
+
+    <!-- Header -->
+
+    <header>
+
+      <div class="logo"><img src="Img/Logo.png" alt="logo"></div>
+
+      <div class="hamburger-menu">
+          <div class="line line-1"></div>
+          <div class="line line-2"></div>
+          <div class="line line-3"></div>
+        </div>
+
+      <nav>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Projects</a></li>
+        </ul>
+
+        <a class="cta" id="popup-m" onclick="div_show()"><button>Contact</button></a>
+
+      </nav>
+
+      <a class="cta" id="popup-d" onclick="div_show()"><button>Contact</button></a>
+
+    </header>
+
+    <main>
+
+        <div class="err">
+            <img src="Img/undraw_page_not_found_su7k.svg" alt="404 Page not found">
+            <p>page not found</p>
+            <a class="home-btn" href="index.html"><button type="button">Go to homepage</button></a>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+
+    <footer id="contact">
+
+      <div id="contact-icons">
+
+        <a id="profile-link" href="https://github.com/jmedina0126">
+          <i class="fab fa-github fa-5x"></i>
+        </a>
+        
+        <a href="https://www.linkedin.com/in/jemar-medina/">
+          <i class="fab fa-linkedin fa-5x"></i>
+        </a>
+
+        <a href="https://www.instagram.com/j.medina0126/">
+          <i class="fab fa-instagram fa-5x"></i>
+        </a>
+
+        <a href="https://www.freecodecamp.org/jmedina0126">
+          <i class="fab fa-free-code-camp fa-5x"></i>
+        </a>
+
+      </div>
+
+      <div class="branding">
+        <p>Copyright © 2020 | Jemar Medina | All Rights Reserved</p>
+      </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+  </body>
+</html>
