@@ -114,30 +114,33 @@ hr {
 /* Welcome Section */
 
 #welcome .container {
-  justify-content: space-between;
   display: flex;
   padding: 15rem 1rem;
+  justify-content: center;
 }
-
-#welcome .intro img {
-  height: 22em;
+.intro {
+  padding: 1rem 8rem;
+}
+.intro img {
+  height: 30em;
+}
+.pint {
+  font-size: 2rem;
+  padding-top: 10rem;
 }
 #welcome i {
   font-family: 'Playfair Display', serif;
   font-size: 5rem;
+  padding-left: .8rem;
 }
 h1 {
   font-size: 8rem;
   font-weight: bold;
   margin: 0 0 .5rem;
 }
-
-.pint {
-  font-size: 2rem;
-  padding-top: 10rem;
-}
 .pint p {
   margin: 0;
+  padding-left: .5rem;
 }
 
 /* Services Section */
@@ -155,7 +158,7 @@ h1 {
   grid-template-rows: 1fr 1fr;
 }
 #services .wrapper {
-  padding: 10rem 1rem;
+  padding: 10rem 5rem;
   font-size: 1.6rem;
   line-height: 1.5;
 }
@@ -261,9 +264,6 @@ footer p {
   #welcome .container {
     height: auto;
   }
-  #services .wrapper {
-    padding: 10rem 5rem;
-  }
 }
 
 @media only screen and (max-width: 992px) {
@@ -282,7 +282,7 @@ footer p {
   #welcome .container {
     padding: 5rem 0;
   }
-  #welcome .intro img {
+  .intro img {
     padding-top: 5rem;
   }
   .pint {
@@ -421,7 +421,7 @@ footer p {
     " int "
     " pint ";
   }
-  #welcome .intro img {
+  .intro img {
     height: 28em;
     padding-top: 8rem;
   }
@@ -440,6 +440,9 @@ footer p {
 
   #services .container {
     padding: 3rem;
+  }
+  #services .wrapper {
+    padding: 10rem 2rem;
   }
 
   /* Portfolio */
@@ -496,7 +499,7 @@ footer p {
   #welcome i {
     font-size: 3rem;
   }
-  #welcome .intro img {
+  .intro img {
     height: 14em;
     padding-top: 3rem;
   }
