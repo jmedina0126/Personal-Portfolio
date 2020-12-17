@@ -415,11 +415,7 @@ footer p {
   #welcome .container {
     padding: .5rem;
 
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr .5fr;
-    grid-template-areas: 
-    " int "
-    " pint ";
+    flex-direction: column;
   }
   .intro img {
     height: 28em;
