@@ -1,5 +1,5 @@
 @import url('normalize.css');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Montserrat+Alternates&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Playfair+Display&display=swap');
 
 
 * {
@@ -114,46 +114,27 @@ hr {
 /* Welcome Section */
 
 #welcome .container {
-  padding: 8.6rem;
-  
-  display: grid;
-  grid-template-columns: 1fr .3fr;
-  grid-template-rows: .7fr .4fr .1fr;
-
-  grid-template-areas:
-  " int int int "
-  " pint pint pint ";
+  justify-content: space-between;
+  display: flex;
+  padding: 15rem 1rem;
 }
 
-.intro {
-  font-family: 'Montserrat', sans-serif;
-  grid-area: int;
-  margin: auto;
-  padding-top: 3rem;
-}
-.stack {
-  position: absolute;
-  text-align: center;
-}
-.stack-top {
-  margin-top: 33rem;
+#welcome .intro img {
+  height: 22em;
 }
 #welcome i {
+  font-family: 'Playfair Display', serif;
   font-size: 5rem;
 }
 h1 {
-  font-size: 8.6rem;
+  font-size: 8rem;
   font-weight: bold;
   margin: 0 0 .5rem;
 }
-#welcome .intro img {
-  height: 40em;
-}
 
 .pint {
-  text-align: center;
-  font-size: 2.2rem;
-  grid-area: pint;
+  font-size: 2rem;
+  padding-top: 10rem;
 }
 .pint p {
   margin: 0;
@@ -299,7 +280,7 @@ footer p {
   /* Welcome */
 
   #welcome .container {
-    padding: 5rem;
+    padding: 5rem 0;
   }
   #welcome .intro img {
     padding-top: 5rem;
@@ -444,9 +425,6 @@ footer p {
     height: 28em;
     padding-top: 8rem;
   }
-  .stack-top {
-    margin-top: 35rem;
-  }
   #welcome i {
     font-size: 4.5rem;
   }
@@ -521,13 +499,6 @@ footer p {
   #welcome .intro img {
     height: 14em;
     padding-top: 3rem;
-  }
-  .stack {
-    position: relative;
-    text-align: center;
-  }
-  .stack-top {
-    margin-top: 5rem;
   }
   .pint {
     font-size: 1.6rem;
