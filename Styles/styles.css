@@ -478,11 +478,7 @@ footer p {
     padding: 3rem;
     min-height: 30vh;
   }
-
-  /* Form */
-
   
-
   /* Welcome */
 
   #welcome .container {
@@ -524,6 +520,17 @@ footer p {
   }
   .bc-left, .bc-btn {
     padding: 0 .5rem;
+  }
+
+  /* Form */
+
+  .modal {
+    display: none;
+  }
+  .form-element-textarea {
+    overflow: hidden;
+    overflow-wrap: break-word;
+    height: 10rem;
   }
 
   /* Footer */
