@@ -1,5 +1,5 @@
 @import url('normalize.css');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Montserrat+Alternates&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Playfair+Display&display=swap');
 
 
 * {
@@ -12,7 +12,7 @@ html, body {
   font-size: 10px;
   position: relative;
   background-color: #f5f5f5;
-  color: #56585d;
+  color: #151c2f;
 }
 
 button {
@@ -41,7 +41,7 @@ nav li, nav a, .cta button {
 header {
   position: fixed;
   width: 100vw;
-  background-color: #f8f8f8;
+  background-color: #f5f5f5;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -99,7 +99,7 @@ section {
   letter-spacing: .2rem;
 }
 p {
-  color: #6C63FF;
+  color: #56585D;
 }
 hr {
   border: 0;
@@ -114,49 +114,33 @@ hr {
 /* Welcome Section */
 
 #welcome .container {
-  padding: 8.6rem;
-  
-  display: grid;
-  grid-template-columns: 1fr .3fr;
-  grid-template-rows: .7fr .4fr .1fr;
-
-  grid-template-areas:
-  " int int int "
-  " pint pint pint ";
+  display: flex;
+  padding: 15rem 1rem;
+  justify-content: center;
 }
-
 .intro {
-  font-family: 'Montserrat', sans-serif;
-  grid-area: int;
-  margin: auto;
-  padding-top: 3rem;
+  padding: 1rem 8rem;
 }
-.stack {
-  position: absolute;
-  text-align: center;
+.intro img {
+  height: 30em;
 }
-.stack-top {
-  margin-top: 33rem;
+.pint {
+  font-size: 2rem;
+  padding-top: 10rem;
 }
 #welcome i {
+  font-family: 'Playfair Display', serif;
   font-size: 5rem;
+  padding-left: .8rem;
 }
 h1 {
-  font-size: 8.6rem;
+  font-size: 8rem;
   font-weight: bold;
   margin: 0 0 .5rem;
 }
-#welcome .intro img {
-  height: 40em;
-}
-
-.pint {
-  text-align: center;
-  font-size: 2.2rem;
-  grid-area: pint;
-}
 .pint p {
   margin: 0;
+  padding-left: .5rem;
 }
 
 /* Services Section */
@@ -174,7 +158,7 @@ h1 {
   grid-template-rows: 1fr 1fr;
 }
 #services .wrapper {
-  padding: 10rem 1rem;
+  padding: 10rem 5rem;
   font-size: 1.6rem;
   line-height: 1.5;
 }
@@ -244,7 +228,7 @@ h1 {
 }
 .err .home-btn {
   font-size: 1.8rem;
-  padding: 1rem 0 10rem;
+  padding: 1rem;
 }
 
 /* Footer */
@@ -253,7 +237,6 @@ footer {
   background-color: #151c2f;
   position: absolute;
   text-align: center;
-  bottom: 0;
   height: auto;
   width: 100%;
   padding: 1rem;
@@ -261,12 +244,12 @@ footer {
 footer a {
   display: inline-block;
   padding: 1rem 1rem 0;
-  color: #d7d9d7;
+  color: #6C63FF;
   transition: 0.5s;
   text-decoration: none;
 }
 footer a:hover { 
-  color: #6C63FF;
+  color: #6996f8;
   transform: translateY(-10px);
   cursor: pointer;
 }
@@ -281,9 +264,6 @@ footer p {
 
   #welcome .container {
     height: auto;
-  }
-  #services .wrapper {
-    padding: 10rem 5rem;
   }
 }
 
@@ -301,9 +281,9 @@ footer p {
   /* Welcome */
 
   #welcome .container {
-    padding: 5rem;
+    padding: 5rem 0;
   }
-  #welcome .intro img {
+  .intro img {
     padding-top: 5rem;
   }
   .pint {
@@ -329,7 +309,7 @@ footer p {
   /* Header */
 
   header {
-    background-color: #f8f8f8;
+    background-color: #f5f5f5;
   }
   nav {
     width: 20rem;
@@ -436,18 +416,11 @@ footer p {
   #welcome .container {
     padding: .5rem;
 
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr .5fr;
-    grid-template-areas: 
-    " int "
-    " pint ";
+    flex-direction: column;
   }
-  #welcome .intro img {
+  .intro img {
     height: 28em;
     padding-top: 8rem;
-  }
-  .stack-top {
-    margin-top: 35rem;
   }
   #welcome i {
     font-size: 4.5rem;
@@ -464,6 +437,9 @@ footer p {
 
   #services .container {
     padding: 3rem;
+  }
+  #services .wrapper {
+    padding: 10rem 2rem;
   }
 
   /* Portfolio */
@@ -506,7 +482,7 @@ footer p {
 
   /* Form */
 
-
+  
 
   /* Welcome */
 
@@ -520,16 +496,9 @@ footer p {
   #welcome i {
     font-size: 3rem;
   }
-  #welcome .intro img {
+  .intro img {
     height: 14em;
     padding-top: 3rem;
-  }
-  .stack {
-    position: relative;
-    text-align: center;
-  }
-  .stack-top {
-    margin-top: 5rem;
   }
   .pint {
     font-size: 1.6rem;
