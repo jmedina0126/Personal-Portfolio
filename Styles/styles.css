@@ -15,7 +15,7 @@ html, body {
   color: #151c2f;
 }
 
-button {
+.button {
   padding: 1rem 2.5rem;
   background-color: rgba(0,171,214,1);
   font-weight: 300;
@@ -26,7 +26,7 @@ button {
   cursor: pointer;
   transition: all 0.3s ease 0s;
 }
-button:hover {
+.button:hover {
   background-color: rgba(0,171,214,.8);
 }
 
@@ -74,7 +74,7 @@ nav {
 .nav-links li a:hover {
   color: #0088a9;
 }
-#popup-m {
+#modalBtn-m {
   display: none;
 }
 .hamburger-menu {
@@ -109,7 +109,94 @@ hr {
 
 /* Form Section */
 
+.modal {
+  display: none;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 1050;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  outline: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: rgba(0,0,0,0.6);
+}
+.modal-dialog {
+  position: relative;
+  width: auto;
+  margin: .8rem;
+  pointer-events: none;
+  
+  display: flex;
+  display: -ms-flexbox;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: calc(100% - 1.6rem);
+}
+.modal-content {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: column;
+  flex-direction: column;
+  width: 40%;
+  pointer-events: auto;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0,0,0,.2);
+  border-radius: .5rem;
+  outline: 0;
+}
 
+.modal-header {
+  padding: 15px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  font-size: 1.5rem;
+}
+
+.modal-header h3 {
+  font-size: 3rem;
+}
+.close {
+  color: #ccc;
+  float: right;
+  font-size: 4rem;
+}
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-body {
+  padding: 10px 20px;
+}
+.form-element-fieldset {
+}
+.form-element-wrapper {
+  padding: 1rem;
+  font-size: 1.8rem;
+}
+.form-element-textarea {
+  height: 8rem;
+}
+.form-button-container {
+  margin: 1rem;
+}
+
+@keyframes modalopen {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
 
 /* Welcome Section */
 
@@ -399,10 +486,10 @@ footer p {
     transform: rotateZ(45deg) translate(-8px, -6px);
     background-color: #edf0f1;
   }
-  #popup-d {
+  #modalBtn-d {
     display: none;
   }
-  #popup-m {
+  #modalBtn-m {
     display: block;
     padding-left: 4rem;
   }
