@@ -200,7 +200,7 @@ hr {
 
 /* Welcome Section */
 
-#welcome .container {
+.welcome .container {
   display: flex;
   padding: 15rem 1rem;
   justify-content: center;
@@ -215,7 +215,7 @@ hr {
   font-size: 2rem;
   padding-top: 10rem;
 }
-#welcome i {
+.welcome i {
   font-family: 'Playfair Display', serif;
   font-size: 5rem;
   padding-left: .8rem;
@@ -348,7 +348,7 @@ footer p {
 
   /* Welcome */
 
-  #welcome .container {
+  .welcome .container {
     height: auto;
   }
 }
@@ -366,7 +366,7 @@ footer p {
 
   /* Welcome */
 
-  #welcome .container {
+  .welcome .container {
     padding: 5rem 0;
   }
   .intro img {
@@ -499,7 +499,7 @@ footer p {
 
   /* Welcome */
 
-  #welcome .container {
+  .welcome .container {
     padding: .5rem;
 
     flex-direction: column;
@@ -508,13 +508,13 @@ footer p {
     height: 28em;
     padding-top: 8rem;
   }
-  #welcome i {
+  .welcome i {
     font-size: 4.5rem;
   }
-  #welcome h1 {
+  .welcome h1 {
     font-size: 6rem;
   }
-  #welcome p {
+  .welcome p {
     margin: 0 .8rem;
     padding: 2rem 0;
   }
@@ -568,14 +568,14 @@ footer p {
   
   /* Welcome */
 
-  #welcome .container {
+  .welcome .container {
     text-align: center;
     padding: 2rem 0 0;
   }
   .intro {
     padding: 10rem 0 0;
   }
-  #welcome i {
+  .welcome i {
     font-size: 3rem;
   }
   .intro img {
