@@ -143,6 +143,7 @@ hr {
   -ms-flex-align: column;
   flex-direction: column;
   width: 40%;
+  margin: auto;
   pointer-events: auto;
   background-color: #fff;
   background-clip: padding-box;
@@ -152,14 +153,17 @@ hr {
 }
 
 .modal-header {
-  padding: 15px;
+  padding: 2rem;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   font-size: 1.5rem;
 }
-
+.modal-header-wrapper {
+  padding: 5rem;
+}
 .modal-header h3 {
   font-size: 3rem;
+  margin: 1rem 0;
 }
 .close {
   color: #ccc;
@@ -174,19 +178,29 @@ hr {
 }
 
 .modal-body {
-  padding: 10px 20px;
+  padding: 1rem 2rem;
 }
-.form-element-fieldset {
+.form-fieldset {
+    margin: 2rem 5rem 5rem;
 }
 .form-element-wrapper {
   padding: 1rem;
   font-size: 1.8rem;
 }
+.form-element-input {
+    height: 2.5rem;
+    width: 15em;
+}
 .form-element-textarea {
   height: 8rem;
+  width: 15em;
 }
 .form-button-container {
   margin: 1rem;
+}
+.form-button-container .button {
+  padding: 1.5rem 3rem;
+  font-size: 1.6rem;
 }
 
 @keyframes modalopen {

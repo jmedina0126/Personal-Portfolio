@@ -24,16 +24,19 @@ window.addEventListener('click', outsideClick);
 // Open
 function openModal() {
   modal.style.display = 'block';
+  document.body.style.overflow ='hidden';
 }
 
 // Close
 function closeModal() {
   modal.style.display = 'none';
+  document.body.style.overflow ='auto';
 }
 
 // Close If Outside Click
 function outsideClick(e) {
   if (e.target == modal) {
     modal.style.display = 'none';
+    document.body.style.overflow ='auto';
   }
 }
