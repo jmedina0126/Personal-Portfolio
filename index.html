@@ -250,6 +250,8 @@
 
     </main>
 
+    <!-- Form -->
+
     <div class="modal contact-modal" id="contactModal" role="dialog" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -263,7 +265,7 @@
           <div class="modal-body">
 
             <div class="form-wrapper">
-              <form class="form">
+              <form class="form" data-netlify-recaptcha="true">
 
                 <div class="form-fieldset">
 
@@ -304,9 +306,7 @@
 
                 </div>
 
-                <div class="form-recaptcha-container">
-
-                </div>
+                <div class="form-recaptcha-container" data-netlify-recaptcha="true"></div>
 
                 <div class="form-button-container">
                   <button class="button">Send Message</button>
