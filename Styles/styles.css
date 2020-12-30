@@ -654,6 +654,12 @@ footer p {
     overflow-wrap: break-word;
     height: 10rem;
   }
+  .form-fieldset {
+    margin: 2rem 0 5rem;
+  }
+  .form-recaptcha-container {
+    margin-left: 0;
+  }
 
   /* Footer */
 
