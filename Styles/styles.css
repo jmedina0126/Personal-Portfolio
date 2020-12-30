@@ -295,8 +295,12 @@ h1 {
   height: 8rem;
   width: 15em;
 }
+.form-recaptcha-container {
+  margin-left: 5rem;
+}
 .form-button-container {
-  margin: 1rem;
+  margin: 1rem 0 3rem;
+  text-align: center;
 }
 .form-button-container .button {
   padding: 1.5rem 3rem;
