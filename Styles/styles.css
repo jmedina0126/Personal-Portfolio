@@ -359,6 +359,7 @@ footer a {
 }
 footer a:hover { 
   color: #6996f8;
+  -moz-transform: translateY(-10px);
   transform: translateY(-10px);
   cursor: pointer;
 }
@@ -469,19 +470,23 @@ footer p {
     background-color: #f8f8f8;
     position: absolute;
     left: 0;
+    -moz-transform: scaleX(0);
     transform: scaleX(0);
     transition: transform 0.3s;
   }
   .nav-links li a::after {
     bottom: 0;
+    -moz-transform-origin: right;
     transform-origin: right;
   }
   .nav-links li a::before {
     top: 0;
+    -moz-transform-origin: left;
     transform-origin: left;
   }
   .nav-links li a:hover::before, 
   .nav-links li a:hover::after {
+    -moz-transform: scaleX(1);
     transform: scaleX(1);
   }
 
@@ -505,6 +510,7 @@ footer p {
     transition: all 0.8s;
   }
   .change .line-1 {
+    -moz-transform: rotateZ(-45deg) translate(-8px, 6px);
     transform: rotateZ(-45deg) translate(-8px, 6px);
     background-color: #f8f8f8;
   }
@@ -513,6 +519,7 @@ footer p {
     background-color: #f8f8f8;
   }
   .change .line-3 {
+    -moz-transform: rotateZ(45deg) translate(-8px, -6px);
     transform: rotateZ(45deg) translate(-8px, -6px);
     background-color: #f8f8f8;
   }
