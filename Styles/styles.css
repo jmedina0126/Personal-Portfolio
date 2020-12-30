@@ -259,7 +259,7 @@ h1 {
   font-size: 1.5rem;
 }
 .modal-header-wrapper {
-  padding: 5rem;
+  padding: 5rem 5rem 0;
 }
 .modal-header h3 {
   font-size: 3rem;
@@ -284,22 +284,26 @@ h1 {
     margin: 2rem 5rem 5rem;
 }
 .form-element-wrapper {
-  padding: 1rem;
+  padding: 1.5rem 1rem;
   font-size: 1.8rem;
 }
+.form-element-container {
+  padding: 1rem 0;
+}
 .form-element-input {
-    height: 2.5rem;
-    width: 15em;
+  height: 3rem;
+  width: 15em;
+  color: #56585d;
 }
 .form-element-textarea {
-  height: 8rem;
+  height: 10rem;
   width: 15em;
 }
 .form-recaptcha-container {
   margin-left: 5rem;
 }
 .form-button-container {
-  margin: 1rem 0 3rem;
+  margin: 3rem;
   text-align: center;
 }
 .form-button-container .button {
