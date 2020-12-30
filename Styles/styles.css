@@ -300,6 +300,7 @@ h1 {
 }
 .form-recaptcha-container {
   margin-left: 5rem;
+  padding: 1.5rem 1rem;
 }
 .form-button-container {
   margin: 3rem;
