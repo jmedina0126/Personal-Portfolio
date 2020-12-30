@@ -8,3 +8,35 @@ hamburger.addEventListener('click', () => {
 });
 
 // Form
+
+// Get DOM Elements
+const modal = document.querySelector('#contactModal');
+const modalBtnD = document.querySelector('#modalBtn-d');
+const modalBtnM = document.querySelector('#modalBtn-m');
+const closeBtn = document.querySelector('.close');
+
+// Events
+modalBtnD.addEventListener('click', openModal);
+modalBtnM.addEventListener('click', openModal);
+closeBtn.addEventListener('click', closeModal);
+window.addEventListener('click', outsideClick);
+
+// Open
+function openModal() {
+  modal.style.display = 'block';
+  document.body.style.overflow ='hidden';
+}
+
+// Close
+function closeModal() {
+  modal.style.display = 'none';
+  document.body.style.overflow ='auto';
+}
+
+// Close If Outside Click
+function outsideClick(e) {
+  if (e.target == modal) {
+    modal.style.display = 'none';
+    document.body.style.overflow ='auto';
+  }
+}
