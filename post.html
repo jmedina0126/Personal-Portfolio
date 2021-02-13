@@ -4,7 +4,7 @@
 
   <head>
 
-    <link href="Styles/styles.css" rel="stylesheet" type="text/css"/>
+    <link href="Styles/style.css" rel="stylesheet" type="text/css"/>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -79,27 +79,34 @@
 
       <!-- Welcome Section -->
 
-      <article>
-          <h2>Post title</h2>
-          <p>I started to learn web development at the start of 2020, this was a few months before covid</p>
-      </article>
+      <section>
+
+        <div class="container">
+            <h2>Post title</h2>
+            <p>I started to learn web development at the start of 2020, this was a few months before covid</p>
+        </div>
+      </section>
 
     </main>
 
-    <div class="modal contact-modal" id="contactModal" role="dialog" aria-hidden="true">
+     <!-- Form -->
+
+     <div class="modal contact-modal" id="contactModal" role="dialog" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
 
           <div class="modal-header">
             <span class="close"><i class="fas fa-window-close"></i></span>
-            <h3>Contact Us!</h3>
-            <p>Leave your contact details, message and website url if you have one and I'll look over it before I get back to you.</p>
+            <div class="modal-header-wrapper">
+              <h3>Contact Us!</h3>
+              <p>Leave your contact details, message and website url if you have one and I'll look over it before I get back to you.</p>
+            </div>
           </div>
           
           <div class="modal-body">
 
             <div class="form-wrapper">
-              <form class="form">
+              <form class="form" name="contact" method="POST" data-netlify="true">
 
                 <div class="form-fieldset">
 
@@ -140,9 +147,7 @@
 
                 </div>
 
-                <div class="form-recaptcha-container">
-
-                </div>
+                <div class="form-recaptcha-container" data-netlify-recaptcha="true"></div>
 
                 <div class="form-button-container">
                   <button class="button">Send Message</button>
@@ -161,28 +166,62 @@
 
     <footer id="contact">
 
-      <div id="contact-icons">
+      <div class="footer-top">
 
-        <a id="profile-link" href="https://github.com/jmedina0126">
-          <i class="fab fa-github fa-5x"></i>
-        </a>
-        
-        <a href="https://www.linkedin.com/in/jemar-medina/">
-          <i class="fab fa-linkedin fa-5x"></i>
-        </a>
+        <div class="footer-about">
+          <h6>About</h6>
+          <p></p>
+        </div>
 
-        <a href="https://www.instagram.com/j.medina0126/">
-          <i class="fab fa-instagram fa-5x"></i>
-        </a>
+        <div class="container">
+          <nav>
+            <h6>Quick Links</h6>
+            <ul class="qlinks">
+              <li><a class="q-link" href="#">About Us</a></li>
+              <li><a class="q-link" href="#">Services</a></li>
+              <li><a class="q-link" href="#">Portfolio</a></li>
+              <li><a class="q-link" href="#">Privacy Policy</a></li>
+            </ul>
+          </nav>
 
-        <a href="https://www.freecodecamp.org/jmedina0126">
-          <i class="fab fa-free-code-camp fa-5x"></i>
-        </a>
+          <div id="contact-icons">
+
+            <h6>Follow Us</h6>
+
+            <a id="profile-link" href="">
+              <i class=""></i>
+            </a>
+            
+            <a id="profile-link" href="https://github.com/jmedina0126">
+              <i class="fab fa-github fa-3x"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/jemar-medina/">
+              <i class="fab fa-linkedin fa-3x"></i>
+            </a>
+
+            <a href="https://www.instagram.com/j.medina0126/">
+              <i class="fab fa-instagram fa-3x"></i>
+            </a>
+
+            <a href="https://www.freecodecamp.org/jmedina0126">
+              <i class="fab fa-free-code-camp"></i>
+            </a>
+
+          </div>
+
+        </div>
 
       </div>
 
-      <div class="branding">
-        <p>Copyright © 2020 | Jemar Medina | All Rights Reserved</p>
+      <hr>
+
+      <div class="footer-bottom">
+
+        <div class="branding">
+          <p>Copyright © 2020 | Jemar Medina | All Rights Reserved</p>
+        </div>
+
       </div>
 
     </footer>

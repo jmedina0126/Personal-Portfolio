@@ -13,6 +13,7 @@ html, body {
   position: relative;
   background-color: #f5f5f5;
   color: #151c2f;
+  scroll-padding-top: 100px;
 }
 
 .button {
@@ -47,6 +48,7 @@ header {
   align-items: center;
   padding: 1rem 15%;
   z-index: 1000;
+  top: 0;
 }
 .logo {
   cursor: pointer;
