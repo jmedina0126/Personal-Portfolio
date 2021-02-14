@@ -536,6 +536,7 @@ footer hr {
   .nav-links {
     display: flex;
     flex-direction: column;
+    margin-bottom: 6rem;
   }
   .nav-links li {
     padding: .8rem 0;
@@ -544,7 +545,7 @@ footer hr {
     color: #f8f8f8;
     position: relative;
     padding: .2rem 0;
-    font-size: 2rem;
+    font-size: 3rem;
   }
   .nav-links li a::before, 
   .nav-links li a::after {
@@ -608,6 +609,9 @@ footer hr {
   #modalBtn-m {
     display: block;
     padding-left: 4rem;
+  }
+  .cta button {
+    font-size: 2.5rem;
   }
 
   /* form */
