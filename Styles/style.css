@@ -15,6 +15,9 @@ html, body {
   color: #151c2f;
   scroll-padding-top: 100px;
 }
+body {
+  padding-top: 65px;
+}
 
 .button {
   padding: 1rem 2.5rem;
