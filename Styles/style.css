@@ -116,7 +116,7 @@ p {
 
 .welcome .container {
   display: flex;
-  padding: 15rem 1rem;
+  padding: 5rem 1rem;
   justify-content: center;
 }
 .intro {
@@ -146,9 +146,6 @@ h1 {
 
 /* Services Section */
 
-#services h3 {
-  padding-top: 6rem;
-}
 #services .container {
   max-width: 1150px;
   text-align: center;
