@@ -425,12 +425,12 @@ nav ul, .footer-about p {
   padding: 1rem .5rem 0;
   transition: 0.5s;
   text-decoration: none;
-  color: #6C63FF;
+  color: #6996f8;
 }
 #contact-icons  a:hover { 
   transform: translateY(-10px);
   cursor: pointer;
-  color: #6996f8;
+  color: #6C63FF;
 }
 #contact-icons img {
   height: 4.5rem;
