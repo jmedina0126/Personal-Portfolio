@@ -428,7 +428,7 @@ footer nav ul, .footer-about p {
   color: #6996f8;
 }
 #contact-icons  a:hover { 
-  transform: translateY(-10px);
+  transform: translateY(-5px);
   cursor: pointer;
   color: #6C63FF;
 }
