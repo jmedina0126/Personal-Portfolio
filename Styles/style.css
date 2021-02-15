@@ -475,10 +475,10 @@ footer hr {
   /* Welcome */
 
   .welcome .container {
-    padding: 5rem 0;
+    padding: 0;
   }
   .intro img {
-    padding-top: 5rem;
+    padding-top: 2rem;
   }
   .pint {
     font-size: 1.8rem;
@@ -621,12 +621,12 @@ footer hr {
 
   .welcome .container {
     padding: .5rem;
-
+    text-align: center;
     flex-direction: column;
   }
   .intro img {
     height: 28em;
-    padding-top: 8rem;
+    padding-top: 0;
   }
   .welcome i {
     font-size: 4.5rem;
@@ -634,9 +634,12 @@ footer hr {
   .welcome h1 {
     font-size: 6rem;
   }
-  .welcome p {
+  .welcome h2 {
     margin: 0 .8rem;
     padding: 2rem 0;
+  }
+  .pint {
+    padding-top: 0;
   }
 
   /* Services */
@@ -680,8 +683,8 @@ footer hr {
 
   /* Main */
 
-  h3, h6 {
-    font-size: 4rem;
+  main {
+    margin: auto;
   }
   h1 {
     font-size: 4.8rem;
@@ -691,25 +694,31 @@ footer hr {
     min-height: 30vh;
   }
   
-  /* Welcome */
+   /* Welcome */
 
-  .welcome .container {
+   .welcome .container {
     text-align: center;
-    padding: 2rem 0 0;
   }
   .intro {
-    padding: 10rem 0 0;
+    padding: 0;
   }
   .welcome i {
     font-size: 3rem;
   }
+  .welcome h1 {
+    font-size: 4rem;
+  }
   .intro img {
     height: 14em;
+    width: auto;
     padding-top: 3rem;
   }
   .pint {
     font-size: 1.6rem;
     padding: 1rem;
+  }
+  .pint h2 {
+    font-size: 1.6rem;
   }
 
   /* Services */
