@@ -44,3 +44,10 @@ function outsideClick(e) {
     document.body.style.overflow ='auto';
   }
 }
+
+// Close Using ESC Key
+window.addEventListener('keydown', function (event) {
+  if (event.key === 'Escape') {
+    modal.style.display = 'none'
+  }
+})
