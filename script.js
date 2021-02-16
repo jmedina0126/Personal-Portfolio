@@ -24,6 +24,7 @@ modalBtnD.addEventListener('click', openModal);
 modalBtnM.addEventListener('click', openModal);
 closeBtn.addEventListener('click', closeModal);
 window.addEventListener('click', outsideClick);
+window.addEventListener('keydown', escKey);
 
 // Open
 function openModal() {
@@ -46,8 +47,9 @@ function outsideClick(e) {
 }
 
 // Close Using ESC Key
-window.addEventListener('keydown', function (event) {
-  if (event.key === 'Escape') {
+function escKey(k) {
+  if (k.key === 'Escape') {
     modal.style.display = 'none'
+    document.body.style.overflow ='auto';
   }
-})
+}
