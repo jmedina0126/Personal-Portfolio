@@ -1,9 +1,9 @@
 // Nav
 
-//Get DOM Elements
+// Get DOM Elements
 const hamburger = document.querySelector('.hamburger-menu');
 const navbar = document.querySelector('nav');
-const header = document.querySelector('header')
+const header = document.querySelector('header');
 
 // Hamburger
 hamburger.addEventListener('click', () => {
