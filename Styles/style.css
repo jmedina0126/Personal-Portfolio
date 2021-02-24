@@ -1,12 +1,12 @@
 @import url('normalize.css');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Playfair+Display&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Playfair+Display&family=Roboto&display=swap');
 
 * {
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   scroll-behavior: smooth;
   font-family: 'Montserrat Alternates', sans-serif;
   font-size: 10px;
@@ -21,7 +21,7 @@ body {
 
 .button {
   padding: 1rem 2.5rem;
-  background-color: rgba(0,171,214,1);
+  background-color: rgba(0, 171, 214, 1);
   font-weight: 300;
   text-decoration: none;
   color: #0a0a0a;
@@ -31,15 +31,17 @@ body {
   transition: all 0.3s ease 0s;
 }
 .button:hover {
-  background-color: rgba(0,171,214,.8);
+  background-color: rgba(0, 171, 214, 0.8);
 }
 
 /* Header */
 
-header nav li, header nav a, .cta button {
+header nav li,
+header nav a,
+.cta button {
   font-weight: 500;
   font-size: 1.6rem;
-  color: #24252A;
+  color: #24252a;
   text-decoration: none;
 }
 header {
@@ -70,7 +72,7 @@ header nav {
 }
 .nav-links li {
   display: inline-block;
-  padding: 0 2rem
+  padding: 0 2rem;
 }
 .nav-links li a {
   transition: all 0.3s ease 0s;
@@ -98,18 +100,27 @@ section .container {
   margin-right: auto;
   margin-left: auto;
 }
- .title {
+.title {
   text-align: center;
   font-size: 3rem;
-  letter-spacing: .2rem;
+  letter-spacing: 0.2rem;
 }
 p {
-  color: #56585D;
+  color: #56585d;
 }
 .title hr {
   border: 0;
   height: 1px;
-  background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0), rgba(108,99,255,.75), rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0));
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0),
+    rgba(108, 99, 255, 0.75),
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0)
+  );
 }
 
 /* Welcome Section */
@@ -127,21 +138,30 @@ p {
 }
 .pint {
   font-size: 2rem;
-  padding-top: 10rem;
+  padding-top: 2rem;
 }
 .welcome i {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Roboto', serif;
   font-size: 5rem;
-  padding-left: .8rem;
+  padding-left: 0.8rem;
 }
 h1 {
-  font-size: 8rem;
+  font-size: 7rem;
   font-weight: bold;
-  margin: 0 0 .5rem;
+  margin: 0 0 0.5rem;
 }
-.pint h2 {
-  margin: 0;
-  padding-left: .5rem;
+.quotes {
+  margin: 5rem 2rem 0 0;
+  font-family: 'Roboto', sans-serif;
+}
+.quotes h2 {
+  margin-top: 1rem;
+  padding-left: 1rem;
+  font-size: 2.4rem;
+}
+.quotes h3 {
+  font-size: 1.8rem;
+  padding-left: 2rem;
 }
 
 /* Services Section */
@@ -165,7 +185,7 @@ h1 {
   text-align: center;
 }
 .icon img {
-  height: 12rem
+  height: 12rem;
 }
 
 /* Portfolio Section */
@@ -175,7 +195,7 @@ h1 {
 
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr .3fr;
+  grid-template-rows: 1fr 1fr 1fr 0.3fr;
 }
 .card {
   max-width: 65rem;
@@ -186,7 +206,7 @@ h1 {
   display: flex;
   flex-direction: column;
   border-radius: 10px;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 .top-card img {
   width: 100%;
@@ -199,14 +219,15 @@ h1 {
   padding: 2rem;
   margin: auto 0;
 }
-.bc-left, .bc-btn {
+.bc-left,
+.bc-btn {
   padding: 0 2rem;
 }
 .bc-left h4 {
   font-size: 3rem;
 }
 .bc-right {
-  margin: auto 0
+  margin: auto 0;
 }
 
 /* Form Section */
@@ -224,14 +245,14 @@ h1 {
   outline: 0;
   overflow-x: hidden;
   overflow-y: auto;
-  background-color: rgba(0,0,0,0.6);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 .modal-dialog {
   position: relative;
   width: auto;
-  margin: .8rem;
+  margin: 0.8rem;
   pointer-events: none;
-  
+
   display: flex;
   display: -ms-flexbox;
   -ms-flex-align: center;
@@ -249,8 +270,8 @@ h1 {
   pointer-events: auto;
   background-color: #fff;
   background-clip: padding-box;
-  border: 1px solid rgba(0,0,0,.2);
-  border-radius: .5rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem;
   outline: 0;
 }
 
@@ -283,7 +304,7 @@ h1 {
   padding: 1rem 2rem;
 }
 .form-fieldset {
-    margin: 2rem 5rem 5rem;
+  margin: 2rem 5rem 5rem;
 }
 .form-element-wrapper {
   padding: 1.5rem 1rem;
@@ -315,10 +336,10 @@ h1 {
 
 @keyframes modalopen {
   from {
-      opacity: 0;
+    opacity: 0;
   }
   to {
-      opacity: 1;
+    opacity: 1;
   }
 }
 
@@ -346,7 +367,7 @@ h1 {
 
 footer {
   background-color: #151c2f;
-  color: #F5F8FA;
+  color: #f5f8fa;
   position: absolute;
   height: auto;
   width: 100%;
@@ -380,23 +401,25 @@ footer nav ul {
   padding-inline-start: 0;
   list-style: none;
 }
-footer nav a, footer nav li {
+footer nav a,
+footer nav li {
   text-decoration: none;
-  color: #F5F8FA;
+  color: #f5f8fa;
   line-height: 2;
 }
-footer nav ul, .footer-about p {
+footer nav ul,
+.footer-about p {
   margin-top: 3rem;
 }
 .q-link {
   position: relative;
 }
-.q-link::before, 
+.q-link::before,
 .q-link::after {
-  content: "";
+  content: '';
   width: 100%;
   height: 2px;
-  background-color: #F5F8FA;
+  background-color: #f5f8fa;
   position: absolute;
   left: 0;
   transform: scaleX(0);
@@ -410,7 +433,7 @@ footer nav ul, .footer-about p {
   top: 0;
   transform-origin: left;
 }
-.q-link:hover::before, 
+.q-link:hover::before,
 .q-link:hover::after {
   transform: scaleX(1);
 }
@@ -422,19 +445,19 @@ footer nav ul, .footer-about p {
   text-align: center;
 }
 #contact-icons a {
-  padding: 1rem .5rem 0;
+  padding: 1rem 0.5rem 0;
   transition: 0.5s;
   text-decoration: none;
   color: #6996f8;
 }
-#contact-icons  a:hover { 
+#contact-icons a:hover {
   transform: translateY(-5px);
   cursor: pointer;
-  color: #6C63FF;
+  color: #6c63ff;
 }
 #contact-icons img {
   height: 4.5rem;
-  margin: .2rem;
+  margin: 0.2rem;
 }
 .fa-free-code-camp {
   font-size: 4.2rem;
@@ -451,9 +474,7 @@ footer hr {
   color: #d7d9d7;
 }
 
-
 @media only screen and (max-width: 1200px) {
-
   /* Welcome */
 
   .welcome .container {
@@ -462,7 +483,6 @@ footer hr {
 }
 
 @media only screen and (max-width: 992px) {
-
   /* Header */
 
   header {
@@ -484,9 +504,9 @@ footer hr {
     font-size: 1.8rem;
   }
 
-   /* Services */
+  /* Services */
 
-   #services .container {
+  #services .container {
     grid-template-columns: 1fr 1fr;
   }
 
@@ -495,11 +515,9 @@ footer hr {
   .modal-content {
     width: 60%;
   }
-  
 }
 
 @media only screen and (max-width: 768px) {
-
   main {
     font-size: 1.4rem;
   }
@@ -530,8 +548,8 @@ footer hr {
     right: 0;
   }
   .logo {
-      color: #151c2f;
-      font-size: 2.5rem;
+    color: #151c2f;
+    font-size: 2.5rem;
   }
   .nav-links {
     display: flex;
@@ -539,17 +557,17 @@ footer hr {
     margin-bottom: 6rem;
   }
   .nav-links li {
-    padding: .8rem 0;
+    padding: 0.8rem 0;
   }
   .nav-links li a {
     color: #f8f8f8;
     position: relative;
-    padding: .2rem 0;
+    padding: 0.2rem 0;
     font-size: 3rem;
   }
-  .nav-links li a::before, 
+  .nav-links li a::before,
   .nav-links li a::after {
-    content: "";
+    content: '';
     width: 100%;
     height: 2px;
     background-color: #f8f8f8;
@@ -566,7 +584,7 @@ footer hr {
     top: 0;
     transform-origin: left;
   }
-  .nav-links li a:hover::before, 
+  .nav-links li a:hover::before,
   .nav-links li a:hover::after {
     transform: scaleX(1);
   }
@@ -579,7 +597,7 @@ footer hr {
     right: 50px;
     cursor: pointer;
     z-index: 1000;
-  
+
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -616,11 +634,10 @@ footer hr {
 
   /* form */
 
-
   /* Welcome */
 
   .welcome .container {
-    padding: .5rem;
+    padding: 0.5rem;
     text-align: center;
     flex-direction: column;
   }
@@ -635,7 +652,7 @@ footer hr {
     font-size: 6rem;
   }
   .welcome h2 {
-    margin: 0 .8rem;
+    margin: 0 0.8rem;
     padding: 2rem 0;
   }
   .pint {
@@ -660,7 +677,7 @@ footer hr {
   .bc-left h5 {
     font-size: 2rem;
   }
- 
+
   /* Form */
 
   .modal-content {
@@ -675,7 +692,6 @@ footer hr {
 }
 
 @media only screen and (max-width: 576px) {
-
   /* Header */
   header nav {
     width: 100%;
@@ -693,10 +709,10 @@ footer hr {
     padding: 3rem;
     min-height: 30vh;
   }
-  
-   /* Welcome */
 
-   .welcome .container {
+  /* Welcome */
+
+  .welcome .container {
     text-align: center;
   }
   .intro {
@@ -725,7 +741,7 @@ footer hr {
 
   #services .container {
     grid-template-columns: 1fr;
-    padding-bottom: 10rem
+    padding-bottom: 10rem;
   }
   #services .wrapper {
     padding: 2rem 0;
@@ -739,8 +755,9 @@ footer hr {
   .card {
     padding: 5rem 1rem;
   }
-  .bc-left, .bc-btn {
-    padding: 0 .5rem;
+  .bc-left,
+  .bc-btn {
+    padding: 0 0.5rem;
   }
 
   /* Form */
