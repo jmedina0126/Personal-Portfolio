@@ -146,7 +146,7 @@ function escKey(k) {
       author: 'Grimsley, Pokemon Trding Card Game',
     },
     {
-      quote: 'I dont worry about my actions, only my inaction.',
+      quote: 'I dont worry about action, only inaction.',
       author: 'Winston Churchill',
     },
     {
@@ -237,23 +237,8 @@ function escKey(k) {
     },
     {
       quote:
-        'In another moment down went Alice after it, never once considering how in the world she would get out again.',
-      author: "Lewis Carrol, Alice's Adventure in Wonderland",
-    },
-    {
-      quote:
-        "I'm afraid that sometimes you'll play lonely games too. Games that you can't win 'cause you'll play against you.",
-      author: "Dr Seus, Oh the places you'll go!",
-    },
-    {
-      quote:
         'It is good to have an end to journey towards; but it is the journey that matters in the end.',
       author: 'Ursula K. Le Guin',
-    },
-    {
-      quote:
-        'Spend a little more time trying to make something of yourself and a little less time trying to impress people.',
-      author: 'The Breakfast club',
     },
     {
       quote:
