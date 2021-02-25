@@ -85,11 +85,6 @@ function escKey(k) {
       author: 'Andrew Ryan, Bioshock',
     },
     {
-      quote:
-        "You can't break a man the way you break a dog, or a horse. The harder you beat the man, the taller he stands.",
-      author: 'The Jackal, Far Cry 2',
-    },
-    {
       quote: 'Replace the fear of the unknown with curiosity.',
       author: 'Alan Watts',
     },
@@ -173,7 +168,7 @@ function escKey(k) {
     },
     {
       quote:
-        "And you will succeed! Yes! You will indeed! 98 and 3/4 per cent guaranteed. KID YOU'LL MOVE MOUNTAINS!",
+        "And you will succeed! Yes! You will indeed! 98 and 3/4 per cent guaranteed. Kid you'll move mountains!",
       author: "Dr Seuss, Oh the places you'll go",
     },
     {
@@ -214,11 +209,6 @@ function escKey(k) {
     },
     {
       quote:
-        'We are always complaining that our days are few, and acting as though there would be no end of them.',
-      author: 'Seneca',
-    },
-    {
-      quote:
         'It is not because things are difficult that we do not dare; it is because we do not dare that things are difficult.',
       author: 'Seneca',
     },
@@ -232,10 +222,6 @@ function escKey(k) {
       author: 'Harold Finch, Person of Interest',
     },
     {
-      quote: "What's the point of saving the world if you don't enjoy it?",
-      author: 'Harold Finch, Person of Interest',
-    },
-    {
       quote:
         'It is good to have an end to journey towards; but it is the journey that matters in the end.',
       author: 'Ursula K. Le Guin',
@@ -244,19 +230,6 @@ function escKey(k) {
       quote:
         "Death is inevitable. Our fear of it makes us play it safe, blocks out emotion. It's a losing game. Without passion, you are already dead.",
       author: 'Max Payne',
-    },
-    {
-      quote: 'It insults the dead when you treat life so carelessly',
-      author: 'Nameless One, Planescape Torment',
-    },
-    {
-      quote:
-        "If you wait for an emergency to happen before you decide what to do, you're already dead.",
-      author: 'A Perfect Getaway',
-    },
-    {
-      quote: 'Everyone is equal in the eyes of existence',
-      author: '',
     },
     {
       quote:
