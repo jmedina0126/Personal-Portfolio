@@ -5,7 +5,7 @@ const hamburger = document.querySelector('.hamburger-menu');
 const navbar = document.querySelector('nav');
 const header = document.querySelector('header');
 
-// Hamburger
+// Hamburger Event
 hamburger.addEventListener('click', () => {
   navbar.classList.toggle('change');
   header.classList.toggle('change');
