@@ -138,7 +138,7 @@ function escKey(k) {
     {
       quote:
         'It is more important to master the cards you are holding than complain about the ones your opponent were dealt.',
-      author: 'Grimsley, Pokemon Trding Card Game',
+      author: 'Grimsley, Pokemon Trading Card Game',
     },
     {
       quote: 'I dont worry about action, only inaction.',
